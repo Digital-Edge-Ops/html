@@ -232,7 +232,7 @@ font-size: 18px;
 }
 
 div#title p {
-    font-size: 14px;
+    font-size: 13px;
 	color:#92979A;
 }
 
@@ -242,7 +242,7 @@ i.fa.fa-arrow-left {
 
 
 div#title{
-padding: 1.5rem 0rem .25rem;	
+ padding: 0;	
 }
 
 
@@ -1866,7 +1866,7 @@ progress {
 .form-label {
   margin-bottom: 0.5rem;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
   }
 
 .col-form-label {
@@ -2032,9 +2032,10 @@ select.selectpicker {
     padding: 0.3125rem 1.25rem;
     color: #92979A;
     height: 2.8rem;
-    border-radius: 0rem;
+    border-radius: 4px;
     margin-bottom: 5px;
     margin-top: 5px;
+    width: 80%;
 }
 
 
@@ -3279,6 +3280,7 @@ div#floor {
 
 i.fas.fa-edit {
     color: #1780df;
+	font-weight: 100;
 }
 
 .invtab {
@@ -3350,9 +3352,13 @@ div#cansav{
 
   div#header {
     padding: 0;
+	border:none;
 }
 
-
+hr.main {
+    color: #c2c6cb;
+    margin: 0;
+}
 
 .nav-justified > .nav-link,
 .nav-justified .nav-item {
@@ -4477,8 +4483,23 @@ i#don {
 	}
 
 .modal-title {
-  margin-bottom: 0;
-  line-height: 1.5; }
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #171C3C;
+    font-size: 18px;
+    font-weight: 600;
+ }
+
+ a.edit {
+    color: #538ae5;
+}
+
+a.edit {
+    color: #147AD6;
+    font-weight: 500;
+}
+
+
 
 .modal-body {
   position: relative;
@@ -4507,8 +4528,14 @@ i#don {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 600px;
     margin: 9rem auto; }
+
+	input[type="radio"] {
+    margin: 0px 14px 0px 0px;
+	font-size: 14px;
+}
+
 
   .modal-dialog-scrollable {
     height: calc(100% - 3.5rem); }
@@ -4521,7 +4548,7 @@ i#don {
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
-    max-width: 700px; } }
+    max-width: 600px; } }
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px; } }
@@ -8667,9 +8694,10 @@ p {
 
   a#addnew {
     border-radius: 0;
-    margin: 2em 0px;
-    padding: 10px 35px;
-	    font-size: 14px!important;
+    margin: 0em 0 1.5rem;
+    padding: 10px 30px;
+	 font-size: 13px!important;
+	 border-radius: 4px;
 }
 
 
@@ -22919,7 +22947,9 @@ button {
 
 .btn-primary {
 border-color: #147ddb;
-    background-color: #147ddb;}
+    background-color: #147ddb;
+	border-radius: 4px;
+	}
 	
 	
  
@@ -24152,7 +24182,7 @@ code {
   opacity: 0.5; }
 
 .modal-header {
-  padding:2rem 1.875rem;    padding-bottom: 0; }
+  padding:2rem 2rem;    padding-bottom: 0; }
   .modal-header .close {
     padding: 0.875rem 1.815rem;
     margin: 0;
@@ -24749,6 +24779,23 @@ code {
 
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[data-popper-placement^="top"] .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   border-top-color: #333333; }
+
+  
+span.edit {
+color: #147AD6;
+font-weight: 500;
+}
+
+span.delete {
+color: #E03138;
+font-weight: 100;
+}
+
+i.far.fa-trash-alt {
+    color: #E03138;
+	font-weight: 500;
+}
+
 
 .widget-timeline .timeline {
   list-style: none;
@@ -25611,10 +25658,10 @@ code {
 border-bottom: 0.0625rem solid #EEEEEE;
     text-transform: capitalize;
     padding-bottom: 15px;
-    font-size: 15px;
+    font-size: 14px;
     white-space: nowrap;
-    font-weight: 400;
-    letter-spacing: 0.0313rem;
+    font-weight: 300!important;
+    letter-spacing: 0px;
     border-color: #ede5e5 !important;
     color: #92979A; }
 	
@@ -25628,7 +25675,7 @@ border-bottom: 0.0625rem solid #EEEEEE;
     box-shadow: 0px 1px 0px #e7e8e9;
     opacity: 1;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     color: #171C3C; }
     [data-theme-version="dark"] .table tbody tr td {
       /*   border-color: $d-border; */ }
@@ -26456,7 +26503,7 @@ border-radius: inherit;
     .coin-tabs .nav-tabs .nav-item .nav-link {
       border: 0;
       border-radius: 0;
-      font-size: 16px;
+      font-size: 14px;
          padding: 1rem 0rem .5rem;
 
 	  }

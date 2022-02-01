@@ -102,10 +102,11 @@
 					</div> 
 				</div>						
                  </div>
+				  </div>
 
-
+                  <hr class="main">
 					
-				
+				<div class="container-fluid">
 		         <div class="row">
 				 
 				   <div>
@@ -189,7 +190,7 @@
                                                 <div class="basic-form">
                                            <form>
                                         <div class="mb-3 mb-0">
-                                            <label class="radio-inline me-3"><input type="radio" name="optradio"> Allow </label>
+                                            <label class="radio-inline me-3"><input type="radio" name="optradio" checked> Allow </label>
                                             <label class="radio-inline me-3"><input type="radio" name="optradio"> Disallow </label>
                                         </div>
                                     </form>
@@ -258,7 +259,9 @@
 											  <option> Select 1</option>
 											  <option>Select 2</option>
 											  <option> Select 3</option>
-										       </select>  </td>												
+										       </select>  </td>		
+	                                         <td> <a href="#"class="edit" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#modalGrid">    <i class="fas fa-edit"></i>   Edit </a> </td>	
+                                             <td> <i class="far fa-trash-alt"></i><span class="delete"> Delete </span> </td>											   
                                             </tr>
 											
                                             <tr>                                           
@@ -276,6 +279,8 @@
 											  <option>Select 2</option>
 											  <option> Select 3</option>
 										       </select>  </td>
+	                                         <td> <i class="fas fa-edit"></i><span class="edit"> Edit </span> </td>	
+                                             <td> <i class="far fa-trash-alt"></i><span class="delete"> Delete </span> </td>											   
                                             </tr>
 
 
@@ -294,6 +299,8 @@
 											  <option>Select 2</option>
 											  <option> Select 3</option>
 										       </select>  </td>
+	                                         <td> <i class="fas fa-edit"></i><span class="edit"> Edit </span> </td>	
+                                             <td> <i class="far fa-trash-alt"></i><span class="delete"> Delete </span> </td>											   
                                             </tr>
 
                                             <tr>                                           
@@ -311,7 +318,8 @@
 											  <option>Select 2</option>
 											  <option> Select 3</option>
 										       </select> </td>												
-												
+	                                         <td> <i class="fas fa-edit"></i><span class="edit"> Edit </span> </td>	
+                                             <td> <i class="far fa-trash-alt"></i><span class="delete"> Delete </span> </td>												
                                             </tr>											
 										 
                                         </tbody>
@@ -323,6 +331,118 @@
  
  
  
+                                   <div class="modal fade" id="modalGrid">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title"> Edit Role </h3>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                                    </button>
+                                                </div>
+                            <div class="modal-body">
+							 <div class="card">
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+
+                                        <div class="row">
+                                            <div class="mb-3 col-md-12">
+                                                <label class="form-label"> Name</label>
+                                                <input type="text" class="form-control" placeholder="Jennifer">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label"> Country </label>
+                                                <select id="inputState" class="default-select form-control wide">
+                                                    <option selected="">Choose...</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                             <div class="mb-3 col-md-6">
+                                                <label class="form-label"> Data Centers </label>
+                                                <select id="inputState" class="default-select form-control wide">
+                                                    <option selected="">Choose...</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label"> Space </label>
+                                                <select id="inputState" class="default-select form-control wide">
+                                                    <option selected="">Choose...</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                             <div class="mb-3 col-md-6">
+                                                <label class="form-label"> M&E </label>
+                                                <select id="inputState" class="default-select form-control wide">
+                                                    <option selected="">Choose...</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+										
+										<div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label"> Network </label>
+                                                <select id="inputState" class="default-select form-control wide">
+                                                    <option selected="">Choose...</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                             <div class="mb-3 col-md-6">
+                                                <label class="form-label"> User Management </label>
+                                                <div class="basic-form">
+                                           <form>
+                                        <div class="mb-3 mb-0">
+                                            <label class="radio-inline me-3"><input type="radio" name="optradio" checked> Allow </label>
+                                            <label class="radio-inline me-3"><input type="radio" name="optradio"> Disallow </label>
+                                        </div>
+                                    </form>
+                                </div>
+                                          </div>	
+                                        </div>
+										
+										<div class="row">
+                                            <div class="mb-3 col-md-12">
+                                                <label class="form-label"> Status </label>
+                                                <select id="inputState" class="default-select form-control wide">
+                                                    <option selected="">Choose...</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                           </div>											
+										
+									<div class="toolbar toolbar-bottom" role="toolbar" style="text-align: right;">	 
+									<button type="button" class="btn btn-outline-primary"> Cancle </button>
+                                        <button type="submit" class="btn btn-primary"> Edit Role </button>
+										</div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>												
+												</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+									
  
  
                 </div>	
