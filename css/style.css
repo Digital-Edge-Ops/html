@@ -430,7 +430,7 @@ th {
   border-width: 0; }
 
 label {
-  display: inline-block;font-size: 16px; }
+  display: inline-block;font-size: 14px; }
 
 button {
   border-radius: 0; }
@@ -447,6 +447,12 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
+
+  label.radio-inline.me-3 {
+    padding: 5px 5px;
+    color: #92979A;
+}
+
 
 button,
 select {
@@ -2031,14 +2037,16 @@ select.selectpicker {
     border: 0.0625rem solid #eeeeee;
     padding: 0.3125rem 1.25rem;
     color: #92979A;
-    height: 2.8rem;
+    height: 2.4rem;
     border-radius: 4px;
     margin-bottom: 5px;
     margin-top: 5px;
-    width: 80%;
+    
 }
 
-
+p.editt {
+    text-align: center;
+}
 
 .form-select {
   display: block;
@@ -3549,7 +3557,7 @@ hr.main {
     .navbar-expand .navbar-nav .dropdown-menu {
       position: absolute; }
     .navbar-expand .navbar-nav .nav-link {
-      padding-right: 0.5rem;
+      padding-right: 1.5rem;
       padding-left: 0.5rem; }
   .navbar-expand .navbar-nav-scroll {
     overflow: visible; }
@@ -3598,7 +3606,8 @@ span.font-w400.d-block {
 }
 
 i#don {
-    color: #c8c8c8;
+     color: #c8c8c8;
+    margin-top: -10px;
 }
 
 .navbar-light .navbar-brand {
@@ -4477,7 +4486,7 @@ i#don {
   border-top-right-radius: calc(0.3rem - 1px); }
   .modal-header .btn-close {
     padding: 0.5rem 0.5rem;
-    margin: -0.5rem -0.5rem -0.5rem auto; 
+    margin:0; 
 	border: 1px solid;
     border-radius: 20px;
 	}
@@ -4529,7 +4538,7 @@ a.edit {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 600px;
-    margin: 9rem auto; }
+    margin: 5rem auto; }
 
 	input[type="radio"] {
     margin: 0px 14px 0px 0px;
@@ -9688,7 +9697,7 @@ label {
     display: none; }
 
 .header {
-  height: 5.5rem;
+  height: 4.5rem;
   z-index: 1;
   position: relative;
   padding: 0rem;
@@ -9856,7 +9865,7 @@ label.radio-inline.me-3 {
  
  a#headlogo {
  
-	height: 5.5rem;
+	height: 4.5rem;
 }
 a.nav-link img {
     width: 36px;
@@ -9994,8 +10003,11 @@ small#admin {
     position: relative;
     color: var(--primary);
     border-radius: 1.25rem;
-    padding: 0.9375rem;
-    line-height: 1; }
+    line-height: 1;
+    padding: 3px;
+    background: #294460; }
+	
+	
     @media only screen and (max-width: 87.5rem) {
       .header-right .notification_dropdown .nav-link {
         padding: 0.625rem; } }
@@ -22927,7 +22939,7 @@ button {
     box-shadow: none; }
 
 .btn {
-  padding:0.4rem 2rem;
+  padding:0.4rem 2.5rem;
   border-radius: 0;
   font-weight: 400;
   font-size: 1rem;margin: 1px 5px; }
@@ -25645,6 +25657,12 @@ i.far.fa-trash-alt {
     font-weight: 500; }
   .table.bg-warning-hover td {
     color: #000; }
+	
+	button.btn.btn-outline-primary1 {
+    border:1px solid #ff8a8a;
+}
+
+
   .table.bg-warning-hover th {
     color: #6C6C6C; }
   .table.bg-warning-hover tr:hover td, .table.bg-warning-hover tr:hover th {
@@ -26515,10 +26533,11 @@ i#plus {
 }
 
 
-
+ 
 a#tab2 {
-    margin: 0 1em;
+    margin: 0rem 1rem 0rem 3rem;
 }
+ 
 
 a#tab1 {
     margin: 0 1em 0px 0px;
