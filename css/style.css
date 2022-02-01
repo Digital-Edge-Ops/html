@@ -3241,15 +3241,55 @@ color: #147ddb;
     border-color: #dee2e6 #dee2e6 #F8F8F8; 
 	font-weight: 600;
 	}
-	
-a.plink {
-    padding: 10px 0px;
+
+	h5.card-title {
     font-size: 16px;
+    font-weight: 600;
 }
+
+
+img.down {
+    width: 12px!important;
+    position: absolute;
+    margin: 30px 12px;
+    text-align: center;
+}
+	
+	
+div#pro {
+    margin-left: 5%;
+	margin-top: 3rem;
+}
+
+div#pro div#title {
+    margin-top: 2rem;
+}
+
+
+a.plink {
+padding: 10px 0px;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+ul.nav.nav-tabs button.btn.btn-secondary {
+    font-size: 18px;
+	margin: 0px 0px;
+	
+}
+
+li.nav-item button.btn.btn-light.dropdown-toggle {
+    font-size: 18px;
+	margin-left: 0px;
+	margin: 0px 0px;
+}
+
 
 a.plink.active {
     color: #147ad6;
     border-bottom: 3px solid #FE8600;
+    width: 5%;
+    position: absolute;
 }
 
 i.fa.fa-eye-slash {
