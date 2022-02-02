@@ -1,5 +1,6 @@
  
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); 
 @import url("../icons/font-awesome/css/all.min.css");
 
  
@@ -232,7 +233,7 @@ font-size: 18px;
 }
 
 div#title p {
-    font-size: 13px;
+    font-size: 12px;
 	color:#92979A;
 }
 
@@ -2044,6 +2045,15 @@ select.selectpicker {
     
 }
 
+a.close {
+    color: #E54242;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+
 p.editt {
     text-align: center;
 }
@@ -3612,7 +3622,7 @@ hr.main {
  #logo {
     border-top: 2px solid #4A515C;
     margin: 0;
-    padding: 15px;
+    padding: 12px;
     border-left: 2px solid #4A515C;
     border-right: 2px solid #4A515C;
 }
@@ -3621,7 +3631,7 @@ hr.main {
 div#forget a {
     font-weight: 600;
     color: #147AD6;
-    font-size: 12px;
+    font-size: 10px;
 }
 	
 	
@@ -9772,7 +9782,7 @@ label {
       width: 100%; }
   @media only screen and (max-width: 87.5rem) {
     .header {
-      height: 4.8rem; } }
+      height: 4rem; } }
   @media only screen and (max-width: 74.9375rem) {
     .header {
       height: 5rem; } }
@@ -9908,7 +9918,8 @@ label.radio-inline.me-3 {
 	height: 4.5rem;
 }
 a.nav-link img {
-    width: 36px;
+width: 26px;
+    padding: 5px;
 }
  
 [data-header-position="fixed"] .content-body {
@@ -10008,7 +10019,7 @@ a.nav-link img {
     align-items: center; }
     .header-right .nav-item .nav-link {
       color: #464a53;
-      font-size:14px;  }
+      font-size:12px;  }
 	  
 small#admin {
     color: #bbb;
@@ -10050,7 +10061,7 @@ small#admin {
 	
     @media only screen and (max-width: 87.5rem) {
       .header-right .notification_dropdown .nav-link {
-        padding: 0.625rem; } }
+        padding: 0; } }
     .header-right .notification_dropdown .nav-link i {
       font-size: 1.5rem; }
       @media only screen and (max-width: 87.5rem) {
@@ -18614,13 +18625,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   font-family: 'Open Sans', sans-serif; }
 
 [data-typography="poppins"] {
-  font-family: 'poppins', sans-serif; }
+  font-family: 'poppins'; }
 
 [data-typography="cairo"] {
   font-family: 'Cairo', sans-serif; }
 
 [data-typography="roboto"] {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto'; }
 
 [data-typography="helvetica"] {
   font-family: 'HelveticaNeue'; }
@@ -20600,7 +20611,7 @@ border-radius: 4px;
     margin-top: 5px;
     border-radius: 4px;
     color: #8392A5; 
-	font-size: 12px;
+	font-size: 10px;
 	} }
 	
 select.default-select.form-control.wide.mb-3 {
@@ -26561,7 +26572,7 @@ border-radius: inherit;
     .coin-tabs .nav-tabs .nav-item .nav-link {
       border: 0;
       border-radius: 0;
-      font-size: 14px;
+      font-size: 13px;
          padding: 1rem 0rem .5rem;
 
 	  }
