@@ -9956,11 +9956,8 @@ label.radio-inline.me-3 {
   margin-top: 0.313rem;
 }
 a.nav-link img {
-    width: 40px;
-    height: 40px;
-    border-radius: 56px;
-    padding: 10px;
-    background: #294460;
+width: 26px;
+    padding: 5px;
 }
  
 [data-header-position="fixed"] .content-body {
@@ -10097,7 +10094,8 @@ small#admin {
       position: static; } }
   .header-right .notification_dropdown .nav-link {
     position: relative;
-    color: var(--primary);}
+    color: var(--primary);
+    }
 	
 	
     @media only screen and (max-width: 87.5rem) {
@@ -30084,6 +30082,13 @@ i.fa.fa-circle {
 }
 a#addnew img {
     width: 1.25rem;
+}
+a.nav-link.setting img {
+    width: 40px;
+    height: 40px;
+    background: #294460;
+    padding: 10px;
+    border-radius: 56px;
 }
 
 /*# sourceMappingURL=style.css.map */
