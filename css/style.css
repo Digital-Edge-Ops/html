@@ -30100,5 +30100,8 @@ a.nav-link.setting img {
     font-weight: 600;
     font-size: 1.25rem;
 }
+h4.card-title.font-17 {
+    font-size: 1.063rem!important;
+}
 
 /*# sourceMappingURL=style.css.map */
