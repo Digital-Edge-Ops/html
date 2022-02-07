@@ -12,6 +12,72 @@
 	<title>  1-12 </title>
 	 <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
       <link href="css\style.css" rel="stylesheet">
+      <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th, .table td {
+    border-color: #f5f5f5;
+    padding: 0.9rem 1rem;
+}
+
+th{
+padding: 0.9375rem 10px !important;
+    text-align: left;
+    border-bottom: 1px solid #E7E8E9;
+    color: #92979A;
+    font-size: 1rem!important;
+    font-weight: 400;
+}
+ td{
+    padding: 0.9375rem 10px !important;
+    text-align: left;
+    border-bottom: 1px solid #E7E8E9;
+    color: #171C3C;
+    font-size: 0.9375rem!important;
+    font-weight: 400;
+ } 
+}   
+
+.btn {
+    padding: 0.4rem 3rem;
+    border-radius: 0;
+    font-weight: 400;
+       font-size: 18px;
+    margin: 0px 0px;
+}
+.profile-tab .nav-item .nav-link {
+    font-size: 1.063rem;
+}
+
+.profile-tab .nav-item .nav-link {
+   font-size: 1.063rem;
+    padding: 10px 12px;
+    height: 3.2rem;}
+
+    #title h4.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #171c3c;
+    font-family: 'DM Sans';
+}
+.card-body {
+    padding: 0rem 0rem 0rem;
+}
+th.pd-l {
+    padding-left: 2.438rem!important;
+}
+th.pd-l.bold-txt {
+    font-size: 0.9375rem;
+    color: #171C3C;
+    font-family: 'DM SANS';
+    font-weight: 600;
+}
+
+</style>
 	
 </head>
 <body>
@@ -122,8 +188,8 @@
 				 
                    <div class="col-xl-1">
 				    <div class="leftside">
-			         <p> <a href="#"  class="plink"> Inventory </a> </p>
-                     <p> <a href="#"  class="plink active"> Capacity </a> </p>                 
+			         <p> <a href="#"  class="plink active"> Inventory </a> </p>
+                     <p> <a href="#"  class="plink"> Capacity </a> </p>                 
 					</div>
 					</div>
 					
@@ -173,7 +239,7 @@
  <div class="invtab">
  <p>Floor</p>
  
- <p><a href="#" id="addneww" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg"><i class="fas fa-plus me-2" id="pluses"></i>Add   Floor </a> </p>
+ <p><a href="#" id="addneww" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg"><img src="images/plus-circle-blue.svg" style="width: 1.25rem"> &nbsp;Add Floor </a> </p>
  
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
    <div class="modal-dialog modal-lg">
@@ -230,28 +296,28 @@
 	<th> </th>
   </tr>
   <tr>
-    <td> 6F </td>
+    <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
     <td> XX/XXX/XX </td>
     <td> XX/XXX/XX </td>
 	 <td> <i class="fas fa-edit"></i></a> </td>
   </tr>
  
    <tr>
-    <td> 6F </td>
+    <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
     <td> XX/XXX/XX </td>
     <td> XX/XXX/XX </td>
 	 <td> <i class="fas fa-edit"></i></a> </td>
   </tr>
   
     <tr>
-    <td> 6F </td>
+    <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
     <td> XX/XXX/XX </td>
     <td> XX/XXX/XX </td>
 	 <td> <i class="fas fa-edit"></i></a> </td>
   </tr>
   
     <tr>
-    <td> 6F </td>
+    <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
     <td> XX/XXX/XX </td>
     <td> XX/XXX/XX </td>
 	 <td> <i class="fas fa-edit"></i></a> </td>
@@ -260,35 +326,7 @@
 
 
 
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
 
-.table th, .table td {
-    border-color: #f5f5f5;
-    padding: 0.9rem 1rem;
-}
-
-th, td {
-padding: 10px 10px;
-    text-align: left;
-    border-bottom: 1px solid #E7E8E9;
-    color: #666768;
-    font-size: 14px;
-}	
-
-.btn {
-    padding: 0.4rem 3rem;
-    border-radius: 0;
-    font-weight: 400;
-       font-size: 18px;
-    margin: 0px 0px;
-}
-
-
-</style>
 </div> 
  </div> 	
 					
@@ -306,7 +344,7 @@ padding: 10px 10px;
 <div class="leftnav">
  <p> Data Halls </p>
  
- <p><a href="#" id="addneww" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="fas fa-plus me-2" id="pluses" ></i>Add   Data Halls </a> </p>
+ <p><a href="#" id="addneww" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><img src="images/plus-circle-blue.svg" style="width: 1.25rem"> &nbsp;Add Data Halls </a> </p>
  
    <div class="modal fade" id="exampleModalCenter">
     <div class="modal-dialog modal-lg">
@@ -357,7 +395,7 @@ padding: 10px 10px;
                                     <table class="table header-border table-hover verticle-middle">
                                         <thead>
                                             <tr>
-                                                <th scope="col"> Name </th>
+                                                <th scope="col" class="pd-l"> Name </th>
                                                 <th scope="col"> Status </th>
                                                 <th scope="col"> Cabinets </th>
                                                 <th scope="col"> Power(kVA) </th>
@@ -368,7 +406,7 @@ padding: 10px 10px;
 										
 										
                                             <tr>
-                                                <th> Level 3(N) </th>
+                                                <th class="pd-l bold-txt"> Level 3(N) </th>
                                                 <td>
                                                     <div class="progress">
                                                         <div class="progress-bar bg-success" role="progressbar"> 
@@ -381,7 +419,7 @@ padding: 10px 10px;
                                             </tr>
 											 
                                              <tr>
-                                                <th> Level 3(N) </th>
+                                                <th class="pd-l bold-txt"> Level 3(N) </th>
                                                 <td>
                                                     <div class="progress">
                                                         <div class="progress-bar bg-success" role="progressbar"> 
@@ -413,22 +451,7 @@ padding: 10px 10px;
 
 	</div>
  
- 
-<style>
-.profile-tab .nav-item .nav-link {
-    font-size: 14px;
-}
 
-.profile-tab .nav-item .nav-link {
-    font-size: 14px;
-    padding: 10px 15px;
-}
-div#pro div#title {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-</style> 
 
     <script src="js\global.min.js"></script>
     <script src="js\custom.min.js"></script>

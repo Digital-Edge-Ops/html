@@ -238,7 +238,7 @@ div#title p {
     font-size: 1rem;
     color: #92979A;
     font-family: DM sans;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 i.fa.fa-arrow-left {
@@ -3271,22 +3271,25 @@ color: #147ddb;
 	}
 
 	h5.card-title {
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 600;
+    font-family: 'DM Sans';
 }
 
 
 img.down {
-    width: 12px!important;
+    width: 25px!important;
     position: absolute;
-    margin: 30px 12px;
+    margin: 0px;
     text-align: center;
+    bottom: -18px;
+    left: 1.3rem;
 }
 	
 	
 div#pro {
-    margin-left: 5%;
-	margin-top: 3rem;
+    margin-left: 8.875rem;
+	margin-top: 4rem;
 }
 
 div#pro div#title {
@@ -3295,21 +3298,30 @@ div#pro div#title {
 
 
 a.plink {
-padding: 10px 0px;
-    font-size: 15px;
+padding: 10px 45px 10px 0px;
+    font-size: 1.063rem;
     letter-spacing: 0;
+    font-family: 'DM SANS';
+    font-weight: 600;
+    text-align: left;
 }
 
 ul.nav.nav-tabs button.btn.btn-secondary {
-    font-size: 18px;
-	margin: 0px 0px;
+    font-size: 1.063rem;
+    margin: 0px 0px;
+    font-family: 'DM SANS';
+    height: 3.2rem;
+    width: 9.375rem;
 	
 }
 
 li.nav-item button.btn.btn-light.dropdown-toggle {
-    font-size: 18px;
-	margin-left: 0px;
-	margin: 0px 0px;
+    font-size: 1.063rem;
+    margin: 0px 0px;
+    font-family: 'DM SANS';
+	  margin-left: 0px;
+    height: 3.2rem;
+    width: 10.125rem;
 }
 
 
@@ -3317,7 +3329,7 @@ a.plink.active {
     color: #147ad6;
     border-bottom: 3px solid #FE8600;
     width: 5%;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 i.fa.fa-eye-slash {
@@ -3331,7 +3343,7 @@ i.fa.fa-eye-slash {
 
 
 .leftside {
-    margin-top: 2rem;
+    margin-top: 4rem;
 	letter-spacing: 0.7px;
 }
 
@@ -3392,8 +3404,8 @@ border: 1px solid #147AD6;
 a#addneww {
     border-radius: 0;
     margin: 2em 0px;
-    padding: 10px 35px;
-    font-size: 14px!important;
+    padding: 10px 1.25rem;
+    font-size: 1.063rem!important;
     font-weight: 600;
     color: #1780df;
 }
@@ -9944,8 +9956,11 @@ label.radio-inline.me-3 {
   margin-top: 0.313rem;
 }
 a.nav-link img {
-width: 26px;
-    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 56px;
+    padding: 10px;
+    background: #294460;
 }
  
 [data-header-position="fixed"] .content-body {
@@ -10082,14 +10097,7 @@ small#admin {
       position: static; } }
   .header-right .notification_dropdown .nav-link {
     position: relative;
-    color: var(--primary);
-    border-radius: 1.25rem;
-    line-height: 1;
-    padding: 5px 5px!important;
-    background: #294460; 
-    width: 2.5rem;
-    height: 2.5rem;
-    }
+    color: var(--primary);}
 	
 	
     @media only screen and (max-width: 87.5rem) {
@@ -19958,7 +19966,8 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     background: transparent;
     background: transparent;
     border-bottom: 3px solid var(--primary);
-    color: var(--primary); }
+    color: var(--primary); 
+    position: relative;}
   @media only screen and (max-width: 35.9375rem) {
     .profile-tab .nav-item .nav-link {
       margin-right: 0rem; } }
@@ -20645,6 +20654,7 @@ border-radius: 4px;
     border-radius: 4px;
     color: #8392A5; 
 	font-size: 1.125rem;
+  font-family: 'DM SANS';
 	} }
 	
 select.default-select.form-control.wide.mb-3 {
@@ -23034,6 +23044,7 @@ button {
     .btn {
       padding: 0.625rem 2rem;
     font-size: 1.063rem;
+    width: 11.25rem;
    
 	  } }
   .btn.btn-success, .btn.btn-secondary, .btn.btn-warning, .btn.btn-primary, .btn.btn-danger, .btn.btn-info {
@@ -23537,6 +23548,7 @@ div#cardnew .table thead th {
 .invtab p {
     color: #11263C;
     font-weight: 600;
+    font-size: 1.25rem;
 }
 
 
@@ -29443,7 +29455,8 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   padding-right: 9.375rem; }
 
 :root {
-  --primary: #F93A0B;
+  /*--primary: #F93A0B;*/
+  --primary: #FE8600;
   --secondary: #145650;
   --primary-hover: #cc2c05;
   --primary-dark: #681703;
@@ -30031,6 +30044,46 @@ i.fa.fa-times {
 .toolbar.toolbar-bottom {
     margin-top: 3.188rem;
 }
-
+#pro label {
+    display: inline-block;
+    font-size: 0.9375rem !important;
+    font-family: 'DM SANS';
+    font-weight: 600;
+}
+#pro .form-control{
+  font-size: 1rem;
+  margin-left: 1.813rem;
+  padding: 0px 0.75rem 0px 1.125rem;
+}
+/*li.nav-item {
+    position: relative;
+}
+a.nav-link.active.show::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f0d7';
+    position: absolute;
+    bottom: -14px;
+    left: 2rem;
+}
+*/
+.leftside p {
+    margin-bottom: 2.125rem;
+}
+i.fa.fa-circle {
+    font-size: 0.375rem;
+    color: #3FEB7B;
+    position: relative;
+    top: -2px;
+}
+.inv {
+    margin-top: 4rem;
+}
+.leftnav{
+  margin-top: 4rem;
+  padding-bottom: 0.25rem;
+}
+a#addnew img {
+    width: 1.25rem;
+}
 
 /*# sourceMappingURL=style.css.map */
