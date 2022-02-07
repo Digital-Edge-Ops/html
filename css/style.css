@@ -9953,11 +9953,11 @@ label.radio-inline.me-3 {
  a#headlogo {
  
 	height: 4.5rem;
-  margin-top: 0.313rem;
+  margin-top: 0.4rem;
 }
 a.nav-link img {
-width: 26px;
-    padding: 5px;
+  width: 26px;
+  padding: 5px;
 }
  
 [data-header-position="fixed"] .content-body {
