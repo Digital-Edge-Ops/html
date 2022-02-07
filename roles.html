@@ -103,10 +103,10 @@ select.selectpicker {
 					<div class="card-action coin-tabs mt-3 mt-sm-0">
 						<ul class="nav nav-tabs" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link  active" id="tab1" data-bs-toggle="tab" href="#"> User Management </a>
+								<a class="nav-link" id="tab1" data-bs-toggle="tab" href="#"> User Management </a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" id="tab2" data-bs-toggle="tab" href="#"> Roles & Permissions </a>
+								<a class="nav-link active" id="tab2" data-bs-toggle="tab" href="#"> Roles & Permissions </a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" id="tab3" data-bs-toggle="tab" href="#"> Data Centres </a>
@@ -152,22 +152,20 @@ select.selectpicker {
                                         <div class="row">
                                             <div class="mb-3 col-md-12">
                                                 <label class="form-label"> Country </label>
-                                                <select id="inputState" class="nice-select  default- form-control wide">
-                                                    <option selected="">Choose...</option>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
-                                                </select>
+                                                <select class="selectpicker">
+											    <option> Select 1</option>
+											    <option>Select 2</option>
+											    <option> Select 3</option>
+										       </select>
 												
                                               </div>
                                              <div class="mb-3 col-md-12">
                                                 <label class="form-label"> Role  </label>
-                                                <select id="inputState" class="default-select form-control wide">
-                                                    <option selected="">Choose...</option>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
-                                                </select>
+                                                <select class="selectpicker">
+											    <option> Select 1</option>
+											    <option>Select 2</option>
+											    <option> Select 3</option>
+										       </select>
                                             </div>
                                         </div>
    
@@ -197,11 +195,13 @@ select.selectpicker {
                                     <table class="table table-responsive-md">
                                         <thead>
                                             <tr>
-                                                <th><strong>  Username/Email </strong></th>
-                                                <th><strong> Name </strong></th>
-                                                <th><strong> Roles </strong></th>
-                                                <th><strong> Country </strong></th>
-                                                <th><strong> Last Activity </strong></th>
+                                                <th><strong>Role Name</strong></th>
+                                                <th><strong>Country</strong></th>
+                                                <th><strong>Data Centres</strong></th>
+                                                <th><strong>Space</strong></th>
+                                                <th><strong>M&E</strong></th>
+                                                <th><strong>Network</strong></th>
+                                                <th><strong>User</strong></th>
 												<th><strong> Status </strong></th>
 												<th><strong> Actions </strong></th>												
 												
@@ -211,11 +211,13 @@ select.selectpicker {
                                         <tbody>
 										
                                               <tr>                                           
-                                                <td> john.yung@digitaledged.com </td>
-                                                <td> John Yung </td>
-                                                <td> Admin </td>
-												<td> Global </td>
-												<td> 2021-12-30 12:35 PM </td>
+                                                <td>Super Admin</td>
+                                                <td>Global</td>
+                                                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td>RW</td>
+												<td>RW</td>
+												<td>RW</td>
+												<td><img src="images/check.svg"></td>
 												<td> <span class="badge badge-success badge-lg light">Active</span>  </td>
 											   <td> 											   
 											  <select class="selectpicker">
@@ -229,11 +231,13 @@ select.selectpicker {
                                             </tr>
 											
                                             <tr>                                           
-                                                <td> john.yung@digitaledged.com </td>
-                                                <td> John Yung </td>
-                                                <td> Admin </td>
-												<td> Global </td>
-												<td> 2021-12-30 12:35 PM </td>
+                                                <td> Admin</td>
+                                                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                                                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><img src="images/check.svg"></td>
 												<td> <span class="badge badge-success badge-lg light">Active</span>  </td>
 											   <td> 
 											    <select class="selectpicker">
@@ -246,13 +250,15 @@ select.selectpicker {
                                             </tr>
 
                                             <tr>                                           
-                                                <td> john.yung@digitaledged.com </td>
-                                                <td> John Yung </td>
-                                                <td> Admin </td>
-												<td> Global </td>
-												<td> 2021-12-30 12:35 PM </td>
+                                                <td> DC Ops TYO</td>
+                                                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                                                <td>TYO1, TYO2, TYO3</td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><img src="images/check.svg"></td>
 												<td> <span class="badge badge-success badge-lg light">Active</span>  </td>
-											 <td> 
+											   <td> 
 											 <select class="selectpicker">
 											  <option> Select 1</option>
 											  <option>Select 2</option>
@@ -263,11 +269,13 @@ select.selectpicker {
                                             </tr>
                                               
 											  <tr>                                           
-                                                <td> john.yung@digitaledged.com </td>
-                                                <td> John Yung </td>
-                                                <td> Admin </td>
-												<td> Global </td>
-												<td> 2021-12-30 12:35 PM </td>
+                                                <td> DC Ops OSA</td>
+                                                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                                                <td>OSA1</td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><i class="fa fa-times" aria-hidden="true"></i></td>
+												<td><img src="images/check.svg"></td>
 												<td> <span class="badge badge-danger badge-lg light">InActive</span> </td>
 											 <td> 
 											 

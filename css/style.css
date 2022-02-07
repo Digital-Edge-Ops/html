@@ -3655,17 +3655,17 @@ div#forget a {
 	
 	
 h4.pro {
-    height: 2.563rem;
-    width: 2.563rem;
+    height: 3.5rem;
+    width: 3.5rem;
     background: #f9e7eb;
     display: block;
     border-radius: 3.563rem;
-    line-height: 2.663rem;
+    line-height: 3.5rem;
     margin-left: 1rem;
     font-size: 1.2rem;
     text-align: center;
     color: #f34848;
-    margin-right: 5px;
+    margin-right: 1.25rem;
 	
 }
 
@@ -4408,8 +4408,8 @@ i#don {
 
 .btn-close {
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
+  width: 1.354rem;
+  height: 1.354rem;
   padding: 0.25em 0.25em;
   color: #000;
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
@@ -4628,7 +4628,7 @@ a.edit {
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
-    max-width: 600px; } }
+    max-width: 52.625rem; } }
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px; } }
@@ -10082,8 +10082,11 @@ small#admin {
     color: var(--primary);
     border-radius: 1.25rem;
     line-height: 1;
-    padding: 3px;
-    background: #294460; }
+    padding: 5px 5px!important;
+    background: #294460; 
+    width: 2.5rem;
+    height: 2.5rem;
+    }
 	
 	
     @media only screen and (max-width: 87.5rem) {
@@ -30012,6 +30015,13 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 th strong {
     font-weight: 400;
+}
+i.fa.fa-times {
+    color: #E54242;
+    font-size: 1.063rem;
+}
+.header {
+    height: 5rem;
 }
 
 
