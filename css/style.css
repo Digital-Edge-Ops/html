@@ -30090,5 +30090,15 @@ a.nav-link.setting img {
     padding: 10px;
     border-radius: 56px;
 }
+.leftnav p:first-child {
+    color: #11263C;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.invtab p:first-child {
+    color: #11263C;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
 
 /*# sourceMappingURL=style.css.map */
