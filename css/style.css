@@ -29967,7 +29967,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-theme-version="dark"] .footer .copyright p {
       color: #fff; }
 
-      img.eye {
+    img.eye {
     width: 1.125rem;
     float: right;
     position: relative;
@@ -29977,6 +29977,9 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     color: #b7b7b7;
     font-weight: 100!important;
     font-size: 14px;
+}
+.login_box{
+  width: 40.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
