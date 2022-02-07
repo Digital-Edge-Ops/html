@@ -4530,7 +4530,8 @@ i#don {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
-  outline: 0; }
+  outline: 0; 
+height: 49.063rem;}
 
 .modal-backdrop {
   position: fixed;
@@ -9803,7 +9804,7 @@ label {
     .header .navbar .navbar-collapse {
       height: 100%;
       width: 100%; 
-      padding: 0.344rem 0px;}
+      padding: 0.75rem 0px}
   @media only screen and (max-width: 87.5rem) {
     .header {
       height: 4rem; } }
@@ -9940,6 +9941,7 @@ label.radio-inline.me-3 {
  a#headlogo {
  
 	height: 4.5rem;
+  margin-top: 0.313rem;
 }
 a.nav-link img {
 width: 26px;
@@ -10067,7 +10069,8 @@ small#admin {
   .header-right > li:not(:first-child) {
     padding-left: 0.2rem;
     padding-right: 1.875rem;
-    border-left: 1px solid #233B55; }
+    border-left: 1px solid #233B55;
+    padding-top: 0.5rem; }
     @media only screen and (max-width: 74.9375rem) {
       .header-right > li:not(:first-child) {
         padding-left: 1rem;padding-right: 1.25rem;} }
@@ -25780,7 +25783,8 @@ border-bottom: 0.0625rem solid #EEEEEE;
     font-weight: 600;
     font-size:  0.9375rem;
     font-family: 'DM SANS';
-    color: #171C3C; }
+    color: #171C3C; 
+    padding: 1.25rem 0px;}
     [data-theme-version="dark"] .table tbody tr td {
       /*   border-color: $d-border; */ }
   .table:not(.table-bordered) thead th {
@@ -30012,6 +30016,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 .basic-form .form-label{
   margin-bottom: 0px;
+  margin-top: 2.313rem;
 }
 th strong {
     font-weight: 400;
@@ -30022,6 +30027,9 @@ i.fa.fa-times {
 }
 .header {
     height: 5rem;
+}
+.toolbar.toolbar-bottom {
+    margin-top: 3.188rem;
 }
 
 
