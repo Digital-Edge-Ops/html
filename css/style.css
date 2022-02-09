@@ -21054,10 +21054,11 @@ select.default-select.form-control.wide.mb-3 {
     background: #fff; }
 
 .form-check-input:checked {
-  background-color: var(--primary);
-  border-color: var(--primary); }
+    background-color: #147ddb;
+    border-color: #147ddb;
+}
 .form-check-input:focus {
-  border-color: var(--primary);
+  border-color: #147ddb;
   box-shadow: var(--rgba-primary-1); }
 
 .js-switch + .switchery {
@@ -23036,7 +23037,8 @@ button {
   padding:0.4rem 2.5rem;
   border-radius: 0;
   font-weight: 400;
-  font-size: 1rem;margin: 1px 5px; }
+  font-size: 1rem;
+  /*margin: 1px 5px; */}
   
   .btn:hover, .btn:focus, .btn:active, .btn.active {
     outline: 0 !important; }
