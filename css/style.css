@@ -3287,15 +3287,29 @@ img.down {
     bottom: -18px;
     left: 1.3rem;
 }
-	
+	@media (min-width: 112.5rem){
+    div#pro {
+    margin-left: 3rem!important;
+  margin-top: 4rem;
+}
+
+  }
+  @media (min-width: 93.75rem){
+    div#pro {
+    margin-left: 3rem!important;
+  margin-top: 4rem;
+}
+
+  }
 	
 div#pro {
-    margin-left: 8.875rem;
+    margin-left: 4.4rem;
 	margin-top: 4rem;
 }
 
 div#pro div#title {
     margin-top: 2rem;
+    margin-bottom: 3.313rem;
 }
 
 
@@ -26295,6 +26309,7 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
   .auth-form .btn {
     height: 3.125rem;
     font-weight: 700;
+    font-family: 'DM SANS';
 border-radius: inherit;
     font-size: 1.063rem;
 	margin: 0;
@@ -30016,7 +30031,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     float: right;
     position: relative;
     right: 18px;
-    top: -29px;
+    top: -24px;
     cursor: pointer;
     color: #b7b7b7;
     font-weight: 100!important;
@@ -30106,6 +30121,9 @@ a.nav-link.setting img {
 }
 h4.card-title.font-17 {
     font-size: 1.25rem!important;
+    margin-top: 2.5rem;
+    font-family: 'DM Sans';
+    font-weight: 700;
 }
 li.nav-item.gap_s a {
     margin: 0px 2.5rem 0px 0px;
@@ -30133,6 +30151,45 @@ li.nav-item.gap_s a {
 }
 button.btn.btn-outline-primary.mr_1 {
     border-radius: 4px;
+}
+.auth-form.pass_reset {
+    padding: 2.75rem 4.063rem 4.688rem 4.063rem;
+}
+.auth-form.pass_reset h4 {
+    color: #147ddb;
+    font-size: 1.063rem;
+    margin-bottom: 1.5rem;
+    font-family: 'DM Sans';
+    font-weight: 600;
+}
+.auth-form.pass_reset h4 a {
+    color: #147ddb;
+    font-size: 1.063rem;
+    font-family: 'DM Sans';
+    font-weight: 600;
+}
+.auth-form.pass_reset h3 {
+    margin-bottom: 0.188rem;
+}
+.auth-form.pass_reset p {
+    font-size: 0.938rem;
+    margin-bottom: 3.125rem;
+}
+.auth-form.pass_reset img.eye {
+    width: 1.125rem;
+    float: right;
+    position: relative;
+    right: 18px;
+    top: -24px;
+  }
+  .auth-form.ch_pass {
+    padding: 3.438rem 4.313rem 4.375rem 4.063rem;
+}
+.toolbar.toolbar-bottom.mt-51 .btn {
+    width: 12rem;
+}
+.mb-45{
+  margin-bottom: 2.813rem;
 }
 
 /*# sourceMappingURL=style.css.map */
