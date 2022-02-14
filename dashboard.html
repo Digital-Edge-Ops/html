@@ -52,7 +52,7 @@
          .profile-tab .nav-item .nav-link {
          font-size: 1.063rem;
          padding: 10px 12px;
-         height: 3.2rem;}
+         height: 4.2rem;}
          #title h4.card-title {
          font-size: 1.688rem;
          margin-bottom: 0;
@@ -163,10 +163,12 @@
       </nav>
       <div class="dt_tabs">
          <div class="profile-tab">
-            <div class="custom-tab-1">
+            <div class="custom-tab-1 tab_flex">
+               <div class="gin_btn">
                <ul class="nav nav-tabs">
-                  <li class="nav-item"> <button class="btn btn-secondary" > Global </button></li>
-                  <li class="nav-item">
+                  <li class="nav-item"> <button class="btn btn-light" > Global </button></li>
+                  <li class="nav-item"> <button class="btn btn-secondary" > Country <span><img src="images/chevron-down.svg" width="11px"></span></button></li>
+                  <!-- <li class="nav-item">
                      <div class="btn-group" role="group">
                         <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Country </button>
                         <div class="dropdown-menu" style="margin: 0px;">
@@ -175,7 +177,12 @@
                         </div>
                      </div>
                   </li>
-                  <li class="nav-item"><a href="#" class="nav-link">TYO1</a></li>
+ -->              
+                  </ul>
+                  </div>
+                  <div class="tabs_srll">
+                  <ul class="nav nav-tabs scroll_tab_dg">
+                  <li class="nav-item ml_20"><a href="#"       class="nav-link">TYO1</a></li>
                   <li class="nav-item"><a href="#" class="nav-link">TYO2</a> </li>
                   <li class="nav-item"><a href="#" class="nav-link active show"> <img class="down" src="images/downward-arrow.png">TYO3</a> </li>
                   <li class="nav-item"><a href="#" class="nav-link"> OSA1 </a> </li>
@@ -185,58 +192,75 @@
                   <li class="nav-item"><a href="#" class="nav-link"> JKT1 </a> </li>
                   <li class="nav-item"><a href="#" class="nav-link"> MNL1 </a> </li>
                </ul>
+               </div>
             </div>
          </div>
       </div>
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+      <div class="container-fluid mb-5">
+         <div class="row mt-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 mb-3 p-0">
                      <div class="grid_card">
                         <div class="card_head">
                            <div class="txt_card">
                               <h3>Floor</h3>
                            </div>
                            <div class="txt_card_2">
-                              <p>In Services</p>
-                              <p>Unavailable</p>
+                              <p><img src="images/orange.png" width="15px"> In Services</p>
+                              <p><img src="images/gray.png" width="15px"> Unavailable</p>
                            </div>
                         </div>
                         <div class="card_diag">
-                           <h3>Diagram</h3>
+                           <img src="images/shape-2.png" width="60%">
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-0">
                      <div class="grid_card">
                         <div class="card_head">
                            <div class="txt_card">
                               <h3>Cabinets</h3>
                            </div>
                            <div class="txt_card_2">
-                              <p>In Services</p>
-                              <p>Unavailable</p>
+                              <p><img src="images/orange.png" width="15px"> In Services</p>
+                              <p><img src="images/green.png" width="15px"> Available</p>
                            </div>
                         </div>
                         <div class="card_diag">
-                           <h3>Diagram</h3>
+                           <img src="images/shape-2.png" width="60%">
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-0">
                      <div class="grid_card">
                         <div class="card_head">
                            <div class="txt_card">
                               <h3>Power (kVA)</h3>
                            </div>
                            <div class="txt_card_2">
-                              <p>In Services</p>
-                              <p>Unavailable</p>
+                              <p><img src="images/orange.png" width="15px"> In Services</p>
+                              <p><img src="images/green.png" width="15px"> Available</p>
                            </div>
                         </div>
                         <div class="card_diag">
-                           <h3>Diagram</h3>
+                           <img src="images/shape-2.png" width="60%">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                     <div class="grid_card grid_mr">
+                        <div class="card_head">
+                           <div class="txt_card">
+                              <h3>Cage</h3>
+                           </div>
+                           <div class="txt_card_2">
+                              <p><img src="images/orange.png" width="15px"> In Services</p>
+                              <p><img src="images/green.png" width="15px"> Available</p>
+                           </div>
+                        </div>
+                        <div class="card_diag">
+                           <img src="images/shape-2.png" width="60%">
                         </div>
                      </div>
                   </div>
@@ -248,6 +272,7 @@
                               <ul class="nav nav-tabs">
                                  <li class="nav-item"> <button class="btn btn-secondary" >Inventory</button></li>
                                  <li class="nav-item"> <button class="btn btn-light" > Capacity</button></li>
+                                 <li class="nav-item"> <button class="btn btn-light" > Cabling</button></li>
                               </ul>
                            </div>
                         </div>
@@ -256,10 +281,10 @@
                         </div>
                  </div>
                </div>
-               <div class="row">
+               <div class="row mt-4">
                   <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0">
-                     <div class="grid_card">
-                        <div class="inv">
+                     <div class="grid_card h-100">
+                        <div class="inv mb-0">
                                  <div class="card_head">
                            <div class="txt_card">
                               <h3>Floos</h3>
@@ -270,30 +295,42 @@
                                        <th> Floor </th>
                                        <th> Cabinets </th>
                                        <th> Power(kVA) </th>
+                                       <th>Cage</th>
                                        <th> </th>
                                     </tr>
                                     <tr>
                                        <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
                                        <td><img src="images/Group 3647.svg"></td>
                                     </tr>
                                     <tr>
                                        <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
                                        <td><img src="images/Group 3647.svg"></td>
                                     </tr>
                                     <tr>
                                        <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
                                        <td><img src="images/Group 3647.svg"></td>
                                     </tr>
                                     <tr>
                                        <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/Group 3647.svg"></td>
+                                    </tr>
+                                    <tr>
+                                       <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
+                                       <td><img src="images/line-x.png" width="80px"></td>
                                        <td><img src="images/Group 3647.svg"></td>
                                     </tr>
                                  </table>
@@ -301,14 +338,14 @@
                      </div>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-12 col-12 p-0">
-                     <div class="grid_card">
+                     <div class="grid_card grid_mr h-100">
                         <div class="card_head">
                            <div class="txt_card">
                               <h3>Data Halls</h3>
                            </div>
                            <div class="txt_card_2">
-                              <p>In Services</p>
-                              <p>Unavailable</p>
+                              <p><img src="images/orange.png" width="15px"> In Services</p>
+                              <p><img src="images/green.png" width="15px"> Available</p>
                            </div>
 
                         </div>
@@ -321,6 +358,7 @@
                                              <th scope="col"> Status </th>
                                              <th scope="col"> Cabinets </th>
                                              <th scope="col"> Power(kVA) </th>
+                                             <th scope="col">Cage</th>
                                              <th scope="col">Layout</th>
                                           </tr>
                                        </thead>
@@ -333,8 +371,9 @@
                                                    </div>
                                                 </div>
                                              </td>
-                                             <td> XX </td>
-                                             <td> XX </td>
+                                             <td><img src="images/line-xx.png" width="100px"></td>
+                                             <td><img src="images/line-xx.png" width="100px"></td>
+                                             <td><img src="images/line-xx.png" width="100px"></td>
                                              <td><img src="images/Group 3647.svg"></td>
                                           </tr>
                                           <tr>
@@ -345,8 +384,9 @@
                                                    </div>
                                                 </div>
                                              </td>
-                                             <td> XX </td>
-                                             <td> XX </td>
+                                             <td><img src="images/line-xx.png" width="100px"></td>
+                                             <td><img src="images/line-xx.png" width="100px"></td>
+                                             <td><img src="images/line-xx.png" width="100px"></td>
                                              <td><img src="images/Group 3647.svg"></td>
                                           </tr>
                                        </tbody>
@@ -355,114 +395,6 @@
                               </div>
 
                      </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-               <div class="grid_card_table">
-                  <div class="card_head">
-                     <div class="txt_card">
-                        <h3>Incidents</h3>
-                     </div>
-                     <div class="txt_card_2">
-                        <p class="vl">View All</p>
-                     </div>
-                  </div>
-                  <div class="card_diag table_card text-left">
-                     <table class="table table-borderless" style="margin-bottom: 0px;">
-                        <thead>
-                           <tr>
-                              <th scope="col" style="color: #92979A; font-size: 1rem !important; font-weight: 500 important; font-family: 'DM Sans';">Date</th>
-                              <th scope="col" style="color: #92979A; font-size: 1rem !important; font-weight: 500 important; font-family: 'DM Sans';">Type</th>
-                              <th scope="col" style="color: #92979A; font-size: 1rem !important; font-weight: 500 important; font-family: 'DM Sans';">Level</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Infra</td>
-                              <td>P1</td>
-                           </tr>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Infra</td>
-                              <td>P1</td>
-                           </tr>
-
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Infra</td>
-                              <td>P1</td>
-                           </tr>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Infra</td>
-                              <td>P1</td>
-                           </tr>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Infra</td>
-                              <td>P1</td>
-                           </tr>
-
-
-
-
-                        </tbody>
-                     </table>
-                  </div>
-               </div>
-               <div class="grid_card_table">
-                  <div class="card_head">
-                     <div class="txt_card">
-                        <h3>Incidents</h3>
-                     </div>
-                     <div class="txt_card_2">
-                        <p class="vl">View All</p>
-                     </div>
-                  </div>
-                  <div class="card_diag table_card text-left">
-                     <table class="table table-borderless" style="margin-bottom: 0px;">
-                        <thead>
-                           <tr>
-                              <th scope="col" style="color: #92979A; font-size: 1rem !important; font-weight: 500 important; font-family: 'DM Sans';">Date</th>
-                              <th scope="col" style="color: #92979A; font-size: 1rem !important; font-weight: 500 important; font-family: 'DM Sans';">Type</th>
-                              <th scope="col" style="color: #92979A; font-size: 1rem !important; font-weight: 500 important; font-family: 'DM Sans';">Status</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Fault</td>
-                              <td>Open</td>
-                           </tr>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Fault</td>
-                              <td>Open</td>
-                           </tr>
-
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Fault</td>
-                              <td>Open</td>
-                           </tr>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Fault</td>
-                              <td>Open</td>
-                           </tr>
-                           <tr>
-                              <td>19/12/2021</td>
-                              <td>Fault</td>
-                              <td>Open</td>
-                           </tr>
-
-
-
-
-                        </tbody>
-                     </table>
                   </div>
                </div>
             </div>

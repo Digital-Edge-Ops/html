@@ -97,7 +97,7 @@ ul.navbar-nav.right_sec li {
 .dt_tabs{
 	background: #fff;
 	box-shadow: 2px 2px 4px #EFF0F1;
-	padding: 1.25rem 1.875rem 0px 1rem;
+	padding: 1rem 1.875rem 0px 1rem;
 }
 .dt_tabs .profile-tab {
     margin-top: 0px;
@@ -116,8 +116,11 @@ ul.navbar-nav.right_sec li {
 .grid_card{
     background: #fff;
     box-shadow: 2px 2px 4px #EFF0F1;
-    margin: 1.719rem 0rem 0px 1.028rem;
+    margin: /*1.719rem*/ 0px 0rem 0px 1.028rem;
     /*padding: 1.375rem 2rem;*/
+}
+.grid_mr{
+   margin-right: 1.028rem;
 }
 .grid_card_table{
     background: #fff;
@@ -130,7 +133,11 @@ ul.navbar-nav.right_sec li {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E7E8E9;
-    padding: 1.375rem 1rem;
+    padding: 1.375rem .5rem 1.375rem 1rem;
+}
+.card_diag img {
+    width: 200px;
+    height: auto;
 }
 .txt_card_2 {
     display: flex;
@@ -149,11 +156,14 @@ ul.navbar-nav.right_sec li {
     font-weight: 400;
     font-size: 1.063rem;
     color: #11263C;
-    padding: 0px 10px;
+    padding: 0px 7px 0px 0px;
     margin-bottom: 0px;
 }
-.card_diag{
+.card_diag {
+    width: 100%;
     padding: 1.719rem 0px 2.375rem 0px;
+    margin: 0 auto;
+    text-align: center;
 }
 .card_diag.table_card {
     padding: 0px 0px;
@@ -161,8 +171,9 @@ ul.navbar-nav.right_sec li {
 .card_diag h3 {
     text-align: center;
 }
-.btn-light{
+.btn-light {
     height: 3.2rem;
+    width: 9.375rem!Important;
 }
 .txt_invglob p {
     font-size: 1.25rem;
@@ -194,6 +205,15 @@ p.vl {
     border-color: #000;
     background: #fff;
 }
+button.btn.btn-light {
+    margin-left: 2px;
+}
+.tab_flex{
+    display: flex;
+}
+.ml_20{
+    margin-left: 20px;
+}
 
 @media (max-width: 600px){
     .grid_card {
@@ -201,5 +221,19 @@ p.vl {
     box-shadow: 2px 2px 4px #eff0f1;
     margin: 1.719rem 1.028rem 0px 1.028rem;
     /* padding: 1.375rem 2rem; */
+}
+.tab_flex{
+    display: block;
+}
+.ml_20{
+    margin-left: 0px;
+}
+.scroll_tab_dg{
+    flex-wrap: nowrap !Important;
+}
+.tabs_srll{
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 10px 0px;
 }
 }

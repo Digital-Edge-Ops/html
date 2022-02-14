@@ -23058,7 +23058,7 @@ button {
     outline: 0 !important; }
   @media only screen and (max-width: 87.5rem) {
     .btn {
-      padding: 0.625rem 2rem;
+      padding: 0.625rem 1rem;
     font-size: 1.063rem;
     width: 11.25rem;
    
@@ -30209,6 +30209,10 @@ button.btn.btn-outline-primary.mr_1 {
 }
 .toolbar.toolbar-bottom.mt-51.d-flex {
     flex-direction: column;
+}
+ul.navbar-nav.header-right {
+    flex-direction: row!important;
+    padding: 15px 10px;
 }
 }
 
