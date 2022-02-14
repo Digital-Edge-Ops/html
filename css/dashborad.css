@@ -74,7 +74,7 @@ a.nav-link.dt_nav {
 a.nav-link.dt_nav {
     display: flex;
     align-items: center;
-    height: 5rem;
+    height: 4rem;
     margin-top: 10px;
     font-size: 1.125rem;
 }
@@ -97,7 +97,7 @@ ul.navbar-nav.right_sec li {
 .dt_tabs{
 	background: #fff;
 	box-shadow: 2px 2px 4px #EFF0F1;
-	padding: 1rem 1.875rem 0px 1rem;
+	padding: .7rem 1.875rem 0px 1rem;
 }
 .dt_tabs .profile-tab {
     margin-top: 0px;
@@ -133,7 +133,7 @@ ul.navbar-nav.right_sec li {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E7E8E9;
-    padding: 1.375rem .5rem 1.375rem 1rem;
+    padding: .6rem .5rem .6rem 1rem;
 }
 .card_diag img {
     width: 200px;
@@ -154,14 +154,14 @@ ul.navbar-nav.right_sec li {
 .txt_card_2 p{
     font-family:'DM SANS';
     font-weight: 400;
-    font-size: 1.063rem;
+    font-size: 0.938rem;
     color: #11263C;
     padding: 0px 7px 0px 0px;
     margin-bottom: 0px;
 }
 .card_diag {
     width: 100%;
-    padding: 1.719rem 0px 2.375rem 0px;
+    padding: .5rem 0px .5rem 0px;
     margin: 0 auto;
     text-align: center;
 }
@@ -173,7 +173,6 @@ ul.navbar-nav.right_sec li {
 }
 .btn-light {
     height: 3.2rem;
-    width: 9.375rem!Important;
 }
 .txt_invglob p {
     font-size: 1.25rem;
@@ -213,6 +212,9 @@ button.btn.btn-light {
 }
 .ml_20{
     margin-left: 20px;
+}
+.card_head h3 {
+    font-size: 1.125rem;
 }
 
 @media (max-width: 600px){

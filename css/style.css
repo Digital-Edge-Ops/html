@@ -3326,7 +3326,6 @@ ul.nav.nav-tabs button.btn.btn-secondary {
     margin: 0px 0px;
     font-family: 'DM SANS';
     height: 3.2rem;
-    width: 9.375rem;
 	
 }
 
@@ -3363,7 +3362,7 @@ i.fa.fa-eye-slash {
 }
 
 .profile-tab {
-    margin-top: 2rem;
+    margin-top:.5rem;
 }
 
 .btn-group {
@@ -23060,7 +23059,7 @@ button {
     .btn {
       padding: 0.625rem 1rem;
     font-size: 1.063rem;
-    width: 11.25rem;
+    width: 10.5rem;
    
 	  } }
   .btn.btn-success, .btn.btn-secondary, .btn.btn-warning, .btn.btn-primary, .btn.btn-danger, .btn.btn-info {
@@ -25812,7 +25811,7 @@ border-bottom: 0.0625rem solid #EEEEEE;
     font-size:  0.9375rem;
     font-family: 'DM SANS';
     color: #171C3C; 
-    padding: 1.25rem 0px;}
+    padding: .5rem 0px}
     [data-theme-version="dark"] .table tbody tr td {
       /*   border-color: $d-border; */ }
   .table:not(.table-bordered) thead th {
