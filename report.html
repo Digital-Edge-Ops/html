@@ -70,6 +70,18 @@
          font-family: 'DM SANS';
          font-weight: 600;
          }
+         div#pro {
+     margin-left: -3rem; 
+    margin-top: 2.5rem;
+}
+@media (min-width: 93.75rem){
+div#pro {
+    margin-left: -5.5rem!important;
+}}
+@media (min-width: 118.75rem){
+div#pro {
+    margin-left: -8rem!important;
+}}
       </style>
    </head>
    <body>
@@ -147,7 +159,10 @@
                               <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#"> Roles & Permissions </a>
                            </li>
                            <li class="nav-item gap_s">
-                              <a class="nav-link active" id="tab3" data-bs-toggle="tab" href="#"> Data Centres </a>
+                              <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#"> Data Centres </a>
+                           </li>
+                           <li class="nav-item gap_s">
+                              <a class="nav-link active" id="tab3" data-bs-toggle="tab" href="#">Report </a>
                            </li>
                         </ul>
                      </div>
@@ -155,13 +170,12 @@
                </div>
                <hr class="main">
                <div class="row">
-                  <div class="col-xl-1">
+                  <div class="col-xl-2">
                      <div class="leftside">
-                        <p> <a href="#"  class="plink active"> Inventory </a> </p>
-                        <p> <a href="#"  class="plink"> Capacity </a> </p>
+                        <p> <a href="#"  class="plink active">System Activity</a> </p>
                      </div>
                   </div>
-                  <div class="col-lg-11">
+                  <div class="col-lg-10">
                      <div id="pro">
                         <div class="profile-tab">
                            <div class="custom-tab-1">
@@ -199,99 +213,75 @@
                               </div>
                            </div>
                         </div>
-                        <div id="title">
-                           <h5 class="card-title"> Inventory for TYO3 </h5>
-                           <p> Each data center can set capacity thresholds at the data center, floor or data hall level. </p>
-                        </div>
-                        <div class="row">
-                           <div class="col-xl-4 col-lg-4">
-                              <div class="inv">
-                                 <div class="invtab">
-                                    <p>Floor</p>
-                                    <p><a href="#" id="addneww" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg"><img src="images/plus-circle-blue.svg" style="width: 1.25rem"> &nbsp;Add Floor </a> </p>
-                                 </div>
-                                 <table>
+                        <div class="col-lg-12">
+                     <div class="card">
+                        <div class="card-body">
+                           <div class="table-responsive">
+                              <table class="table table-responsive-md">
+                                 <thead>
                                     <tr>
-                                       <th> Floor </th>
-                                       <th> Cabinets </th>
-                                       <th> Power(kVA) </th>
-                                       <th> </th>
+                                       <th><strong>Timestamp</strong></th>
+                                       <th><strong>Data Center</strong></th>
+                                       <th><strong>User &nbsp;&nbsp;&nbsp; &nbsp;<span>
+                                          <div class="btn-group" role="group">
+                                         <img src="images/sliders.svg" style="cursor: pointer;" data-bs-toggle="dropdown" aria-expanded="false">
+                                       <div class="dropdown-menu" style="margin: 0px;">
+                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name=" checked flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                            Username
+                                                            </label>
+                                                         </div>
+                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                            Username
+                                                            </label>
+                                                         </div>
+                                                         <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                            Username
+                                                            </label>
+                                                         </div>
+                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                            Username
+                                                            </label>
+                                                         </div>
+
+                                       </div>
+                                    </div>
+
+                                       </span></strong></th>
+                                       <th><strong> Actions </strong></th>
+                                       <th><strong> Result</strong></th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>2021-12-30 12:35pm</td>
+                                       <td>Global</td>
+                                       <td>user</td>
+                                       <td>in user</td>
+                                       <td> <span class="badge badge-success badge-lg light">Active</span>  </td>
                                     </tr>
                                     <tr>
-                                       <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> <i class="fas fa-edit"></i></a> </td>
+                                       <td>2021-12-30 12:35pm</td>
+                                       <td>Global</td>
+                                       <td>user</td>
+                                       <td>in floor</td>
+                                       <td> <span class="badge badge-success badge-lg light">Active</span>  </td>
                                     </tr>
-                                    <tr>
-                                       <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> <i class="fas fa-edit"></i></a> </td>
-                                    </tr>
-                                    <tr>
-                                       <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> <i class="fas fa-edit"></i></a> </td>
-                                    </tr>
-                                    <tr>
-                                       <td> 6F <i class="fa fa-circle" aria-hidden="true"></i> </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> XX/XXX/XX </td>
-                                       <td> <i class="fas fa-edit"></i></a> </td>
-                                    </tr>
-                                 </table>
-                              </div>
-                           </div>
-                           <div class="col-xl-8 col-lg-8">
-                              <div class="leftnav">
-                                 <p> Data Halls </p>
-                                 <p><a href="#" id="addneww" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><img src="images/plus-circle-blue.svg" style="width: 1.25rem"> &nbsp;Add Data Halls </a> </p>
-                              </div>
-                              <div class="card-body">
-                                 <div class="table-responsive">
-                                    <table class="table header-border table-hover verticle-middle">
-                                       <thead>
-                                          <tr>
-                                             <th scope="col" class="pd-l"> Name </th>
-                                             <th scope="col"> Status </th>
-                                             <th scope="col"> Cabinets </th>
-                                             <th scope="col"> Power(kVA) </th>
-                                             <th scope="col">  </th>
-                                          </tr>
-                                       </thead>
-                                       <tbody id="cardnew">
-                                          <tr>
-                                             <th class="pd-l bold-txt"> Level 3(N) </th>
-                                             <td>
-                                                <div class="progress">
-                                                   <div class="progress-bar bg-success" role="progressbar"> 
-                                                   </div>
-                                                </div>
-                                             </td>
-                                             <th> XX </th>
-                                             <th> XX </th>
-                                             <td>  <i class="fas fa-edit"></i></a> </td>
-                                          </tr>
-                                          <tr>
-                                             <th class="pd-l bold-txt"> Level 3(N) </th>
-                                             <td>
-                                                <div class="progress">
-                                                   <div class="progress-bar bg-success" role="progressbar"> 
-                                                   </div>
-                                                </div>
-                                             </td>
-                                             <th> XX </th>
-                                             <th> XX </th>
-                                             <td>  <i class="fas fa-edit"></i></a> </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
-                              </div>
+                                   
+                                   
+                                 </tbody>
+                              </table>
                            </div>
                         </div>
+                     </div>
+                  </div>
                      </div>
                   </div>
                </div>

@@ -3304,7 +3304,7 @@ img.down {
 	
 div#pro {
     margin-left: 4.4rem;
-	margin-top: 4rem;
+	margin-top: 2.5rem;
 }
 
 div#pro div#title {
@@ -3313,7 +3313,7 @@ div#pro div#title {
 
 
 a.plink {
-padding: 10px 45px 10px 0px;
+padding: 10px 5px 10px 0px;
     font-size: 1.063rem;
     letter-spacing: 0;
     font-family: 'DM SANS';
@@ -3357,7 +3357,7 @@ i.fa.fa-eye-slash {
 
 
 .leftside {
-    margin-top: 4rem;
+    margin-top: 2rem;
 	letter-spacing: 0.7px;
 }
 
@@ -3455,7 +3455,7 @@ div#cansav{
   div#header {
     padding: 0;
 	border:none;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
 }
 
 hr.main {
@@ -8975,7 +8975,7 @@ h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .
 .content-body .container {
   margin-top: 1.5rem; }
 .content-body .container-fluid, .content-body .container-sm, .content-body .container-md, .content-body .container-lg, .content-body .container-xl, .content-body .container-xxl {
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   padding-right: 6.5rem;
   padding-left: 6.5rem; }
   @media only screen and (max-width: 75rem) {
@@ -24004,7 +24004,7 @@ border-right: 1px solid #E7E8E9;
   border: 0;
   z-index: 2;
   overflow: hidden;
-  border-radius: 1.25rem;
+  border-radius: 0px;
   box-shadow: 0 0 3.125rem 0 rgba(82, 63, 105, 0.15);
   margin-top: 0; }
   .dropdown-menu .dropdown-item {
@@ -30193,6 +30193,48 @@ button.btn.btn-outline-primary.mr_1 {
 .red_color{
   color: #E03138;
 }
+.main_scrll {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+.btn_ul {
+    width: 38%;
+    margin-top: -1px;
+}
+.ul_scrll .nav {
+    flex-wrap: nowrap;
+}
+.btn_ul .btn-group {
+    margin-right: 0px;
+}
+.ul_scrll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 90%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 /*.custom-tab-1 {
     overflow-x: auto;
     overflow-y: hidden;
@@ -30201,6 +30243,14 @@ button.btn.btn-outline-primary.mr_1 {
     flex-wrap: nowrap!important;
 }
 */
+
+.dropdown-menu.show {
+    padding: 1rem;
+}
+.form-check-input:checked {
+    background-color: #11263c;
+    border-color: #11263c;
+}
 @media (max-width: 767px){
   .toolbar.toolbar-bottom.mt-51 .btn {
     width: 100%;
