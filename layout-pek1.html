@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="keywords" content="">
+      <meta name="author" content="">
+      <meta name="robots" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- PAGE TITLE HERE -->
+      <title>Roles</title>
+      <link href="css\style.css" rel="stylesheet">
+      <style>
+         thead {
+         border-bottom: 0.0625rem solid #EEEEEE;
+         }
+         select.selectpicker {
+         width: 7.563rem;
+         }
+         .main_layout{
+         border: 1px solid #000;
+         margin-top: 3rem;
+         }
+         .btn {
+         padding: 0.625rem 2rem;
+         font-size: 1.063rem;
+         width: 12.813rem;}
+         .main_block_1 {
+         }
+         .block_1 {
+         width: 75%;
+         border-bottom: 2px dashed #ccc;
+         border-right: 2px dashed #ccc;
+         position: relative;
+         }
+         .left_door {
+         position: absolute;
+         bottom: -3px;
+         left: -43px;
+         }
+         .data_block p {
+         background: orange;
+         padding: 0px 5px;
+         color: #fff;
+         font-size: 1rem;
+         margin-bottom: 1px;
+         text-align: center;
+         max-width: 100px;
+         width: 100%;
+         }
+         .block_1 h3 {
+         font-size: 1.125rem;
+         font-family: 'DM Sans';
+         font-weight: 600;
+         color: #171C3C;
+         text-align: center;
+         margin-bottom: 15px;
+         margin-top: 10px;
+         }
+         .block_3 h3 {
+         font-size: 1.125rem;
+         font-family: 'DM Sans';
+         font-weight: 600;
+         color: #171C3C;
+         text-align: center;
+         margin-bottom: 5px;
+         }
+         .top_img_2 img {
+         position: absolute;
+         top: -15px;
+         right: -1px;
+         z-index: 1;
+         width: 47%;
+         }
+         .top_img{
+         width: 100%;
+         text-align: right;
+         margin: 0 0 0 -4.5rem;
+         }
+         .left_door img {
+         width: 80%;
+         }
+         .one_bottom-2 img {
+         position: absolute;
+         right: 10px;
+         }
+         .bottom_data {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0rem 0rem;
+         border-bottom: 2px dashed #ccc;
+         }
+         .bottom_data div {
+         flex: 1;
+         margin: 10px 10px;
+         }
+         button.btn-crah {
+         background: #86C4D7;
+         border: 1px solid #000;
+         padding: 7px 40px;
+         }
+         .bottom {
+         position: absolute;
+         left: 44%;
+         }
+         .sec_one {
+         display: flex;
+         align-items: end;
+         justify-content: space-between;
+         }
+         .block_2 {
+         text-align: right;
+         }
+         .btn_even_right {
+         /*display: flex;
+         flex-direction: column;*/
+         position: relative;
+         }
+         .btn_even_right button.btn-crah {
+         background: #86C4D7;
+         border: 1px solid #000;
+         padding: 15px 26px 15px 18px;
+         line-height: 1rem;
+         transform: rotate(-90deg);
+         }
+         p.me_hide {
+         visibility: hidden;
+         }
+         button.btn-crah.beven-1 {
+    position: absolute;
+    top: -160px;
+    right: -21px;
+}
+button.btn-crah.beven-2 {
+    position: absolute;
+    top: -72px;
+    right: -21px;
+}
+.one_bottom-2 {
+    position: relative;
+}
+         @media (min-width: 992px){
+         .modal-lg, .modal-xl {
+         max-width: 75rem;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div id="main-wrapper">
+         <div class="header">
+            <div class="header-content">
+               <nav class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse justify-content-between">
+                     <div class="header-left">
+                        <div class="nav-header">
+                           <a href="index.html" class="brand-logo" id="headlogo">
+                           <img src="images\logo.png" alt=""/> </a>
+                        </div>
+                     </div>
+                     <ul class="navbar-nav header-right">
+                        <li class="nav-item dropdown notification_dropdown">
+                           <a class="nav-link setting " href="javascript:void(0);" data-bs-toggle="dropdown">
+                           <img src="images\settings-10@1x.png" alt=""/>                           
+                           </a>
+                        </li>
+                        <li class="nav-item dropdown header-profile">
+                           <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                              <h4 class="pro">  DU  </h4>
+                              <div>
+                                 <span class="font-w400 d-block">Franklin Jr</span>
+                                 <small class="text-end font-w400" id="admin"> Admin </small>
+                              </div>
+                           </a>
+                           <i class="fa fa-caret-down" aria-hidden="true" id="don"></i>
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-end">
+                              <a href="app-profile.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                 </svg>
+                                 <span class="ms-2">Profile </span>
+                              </a>
+                              <a href="email-inbox.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                 </svg>
+                                 <span class="ms-2">Inbox </span>
+                              </a>
+                              <a href="page-error-404.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                 </svg>
+                                 <span class="ms-2">Logout </span>
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="content-body">
+            <hr class="main">
+            <div class="container-fluid">
+               <div class="row">
+                  <div>
+                     <a href="#" id="addnew" class="btn btn-primary me-3 btn-sm" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">&nbsp; Open Layout</a> 
+                     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                           <div class="modal-content">
+                              <div class="modal-header mt-59">
+                                 <h3 class="modal-title">Layout - PEK1-3-3-C-001</h3>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" style="margin-top: -1rem;"> </button>
+                              </div>
+                              <div class="modal-body" style="padding-bottom: 4.5rem;">
+                                 <div class="card">
+                                    <div class="card-body" style="padding: 0px;">
+                                       <div class="main_layout">
+                                          <div class="main_block_1">
+                                             <div class="row">
+                                                <div class="col-xl-7">
+                                                   <div class="top_img">
+                                                      <img src="images/top-1.png">
+                                                   </div>
+                                                </div>
+                                                <div class="col-xl-5">
+                                                   <div class="top_img_2">
+                                                      <img src="images/right_pic.png">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="sec_one">
+                                                <div class="block_1">
+                                                   <h3>PEK1-3-3-C-001</h3>
+                                                   <div class="row">
+                                                      <div class="col-xl-2">
+                                                         <div class="left_door">
+                                                            <img src="images/left-door.png">
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-xl-3">
+                                                         <div class="data_block">
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <div class="one_bottom">
+                                                               <img src="images/black-1.png">
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-xl-3">
+                                                         <div class="data_block">
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p class="me_hide">003-0101</p>
+                                                            <p class="me_hide">003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p class="me_hide">003-0101</p>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-xl-3">
+                                                         <div class="data_block">
+                                                            <p class="me_hide">003-0101</p>
+                                                            <p class="me_hide">003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p>003-0101</p>
+                                                            <p class="me_hide">003-0101</p>
+                                                            <div class="one_bottom-2">
+                                                               <img src="images/black-1.png">
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="block_2">
+                                                   <div class="btn_right_side">
+                                                      <div class="btn_even_right">
+                                                         <button class="btn-crah beven-1">CRAC</button>
+                                                         <button class="btn-crah beven-2" style="margin-bottom: 5px;">CRAC</button>
+                                                      </div>
+                                                   </div>
+                                                   <div class="one_bottom">
+                                                      <img src="images/black-1.png">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="main_block_2">
+                                             <div class="block_3" style="text-align:center; margin-top: 1rem;">
+                                                <h3>PEK1-3-3-C-001</h3>
+                                                <div class="row" style="padding: 0px 17px;">
+                                                   <div class="bottom_data">
+                                                      <div class="data_block">
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                      </div>
+                                                      <div class="data_block">
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                      </div>
+                                                      <div class="data_block">
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                      </div>
+                                                      <div class="data_block">
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                      </div>
+                                                      <div class="data_block">
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                      </div>
+                                                      <div class="data_block">
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                      </div>
+                                                      <div class="data_block">
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                         <p>003-0101</p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="block_4">
+                                                <div class="row" style="margin: 2rem 0px;">
+                                                   <div class="col-xl-3">
+                                                      <div class="crah_block">
+                                                         <button class="btn-crah">CRAH</button>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-xl-4">
+                                                      <div class="crah_block">
+                                                         <button class="btn-crah">CRAH</button>
+                                                         <button class="btn-crah" style="margin-left:-4px">CRAH</button>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-xl-4">
+                                                      <div class="crah_block">
+                                                         <button class="btn-crah">CRAH</button>
+                                                         <button class="btn-crah" style="margin-left:-4px">CRAH</button>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="row" style="margin: 0rem;">
+                                                   <div class="col-xl-3">
+                                                      <div class="crah_block">
+                                                         <button class="btn-crah">HF</button>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-xl-12">
+                                                      <div class="bottom">
+                                                         <img src="images/bottom-pic.png">
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js\global.min.js"></script>
+      <script src="js\custom.min.js"></script>
+      <script src="js\dlabnav-init.js"></script>
+   </body>
+</html>

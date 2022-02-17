@@ -30092,10 +30092,10 @@ i.fa.fa-circle {
     top: -2px;
 }
 .inv {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .leftnav{
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-bottom: 0.25rem;
 }
 a#addnew img {
@@ -30111,12 +30111,12 @@ a.nav-link.setting img {
 .leftnav p:first-child {
     color: #11263C;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.063rem;
 }
 .invtab p:first-child {
     color: #11263C;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.063rem;
 }
 h4.card-title.font-17 {
     font-size: 1.25rem!important;
@@ -30263,6 +30263,14 @@ ul.navbar-nav.header-right {
     flex-direction: row!important;
     padding: 15px 10px;
 }
+}
+
+.data-hall-block table thead th{
+  text-transform: none;
+}
+
+.table.table-responsive-md .center-col{
+text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
