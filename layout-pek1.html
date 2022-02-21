@@ -40,13 +40,18 @@
          }
          .data_block p {
          background: orange;
-         padding: 0px 5px;
+         padding: 0px 5px 0px 5px;
+         cursor: pointer;
          color: #fff;
          font-size: 1rem;
-         margin-bottom: 1px;
          text-align: center;
          max-width: 100px;
          width: 100%;
+         margin-bottom: 0px;
+         }
+         p.ct_main {
+         margin-bottom: 1px;
+         padding: 3px 5px 0px 5px;
          }
          .block_1 h3 {
          font-size: 1.125rem;
@@ -88,12 +93,12 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
-         padding: 0rem 0rem;
+         padding: 1rem 2rem;
          border-bottom: 2px dashed #ccc;
          }
          .bottom_data div {
          flex: 1;
-         margin: 10px 10px;
+         margin: 0px 0px;
          }
          button.btn-crah {
          background: #86C4D7;
@@ -128,18 +133,119 @@
          visibility: hidden;
          }
          button.btn-crah.beven-1 {
-    position: absolute;
-    top: -160px;
-    right: -21px;
+         position: absolute;
+         top: -160px;
+         right: -21px;
+         }
+         button.btn-crah.beven-2 {
+         position: absolute;
+         top: -72px;
+         right: -21px;
+         }
+         .one_bottom-2 {
+         position: relative;
+         position: absolute;
+         right: 74px;
+         bottom: 35px;
+         }
+         .tooltp{
+         background: #000;
+         }
+         .info_ct {
+         position: relative;
+         background: #000;
+         }
+         .innr_ct {
+         position: absolute;
+         background: #11263cf5;
+         left: 109px;
+         width: 170px;
+         text-align: left;
+         z-index: 1111;
+         top: -5.3rem;
+         border-radius: 5px;
+         padding: 10px 3px;
+         }
+         .content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         .content p {
+         margin-bottom: 0;
+         text-align: left;
+         background: #11263c00;
+         font-size: 11px;
+         border-radius: 5px;
+         }
+         .info_ct{
+         display: none;
+         }
+         .ct_main:hover + .info_ct{
+         display: block;
+         }
+         p.ct_main:hover {
+         margin-bottom: 0px;
+         padding: 3px 5px 0px 5px;
+         border: 1px solid #11263cf5;
+         }
+         .content p:nth-child(2) {
+    text-align: right;
 }
-button.btn-crah.beven-2 {
-    position: absolute;
-    top: -72px;
-    right: -21px;
-}
-.one_bottom-2 {
-    position: relative;
-}
+.triangle-left {
+         width: 0;
+         height: 0;
+         border-top: 10px solid transparent;
+         border-right: 10px solid #1a2f44;
+         border-bottom: 10px solid transparent;
+         position: absolute;
+         right: 49px;
+         top: -25px;
+         }
+         .bottom_data .triangle-left {
+         width: 0;
+         height: 0;
+         border-top: 10px solid transparent;
+         border-right: 10px solid #1a2f44;
+         border-bottom: 10px solid transparent;
+         position: absolute;
+         right: 20px;
+         top: -25px;
+         }
+         
+         @media (min-width: 1600px){
+         .triangle-left {
+         width: 0;
+         height: 0;
+         border-top: 10px solid transparent;
+         border-right: 10px solid #1a2f44;
+         border-bottom: 10px solid transparent;
+         position: absolute;
+         right: 75px;
+         top: -28px;
+         }
+         .bottom_data .triangle-left {
+         width: 0;
+         height: 0;
+         border-top: 10px solid transparent;
+         border-right: 10px solid #1a2f44;
+         border-bottom: 10px solid transparent;
+         position: absolute;
+         right: 39px;
+         top: -25px;
+         }
+         .innr_ct {
+         position: absolute;
+         background: #11263cf5;
+         left: 107px;
+         width: 200px;
+         text-align: left;
+         z-index: 1111;
+         top: -5rem;
+         border-radius: 5px;
+         padding: 10px 3px;
+         }
+         }
          @media (min-width: 992px){
          .modal-lg, .modal-xl {
          max-width: 75rem;
@@ -246,15 +352,231 @@ button.btn-crah.beven-2 {
                                                       </div>
                                                       <div class="col-xl-3">
                                                          <div class="data_block">
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
                                                             <div class="one_bottom">
                                                                <img src="images/black-1.png">
                                                             </div>
@@ -262,28 +584,318 @@ button.btn-crah.beven-2 {
                                                       </div>
                                                       <div class="col-xl-3">
                                                          <div class="data_block">
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
                                                             <p class="me_hide">003-0101</p>
                                                             <p class="me_hide">003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
                                                             <p class="me_hide">003-0101</p>
                                                          </div>
                                                       </div>
                                                       <div class="col-xl-3">
                                                          <div class="data_block">
                                                             <p class="me_hide">003-0101</p>
-                                                            <p class="me_hide">003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p>003-0101</p>
-                                                            <p class="me_hide">003-0101</p>
+                                                            <p class="me_hide">003-0101
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="ct_main">003-0101
+                                                            <div class="info_ct">
+                                                               <div class="innr_ct">
+                                                                  <div class="content">
+                                                                     <p>Status:</p>
+                                                                     <p>In Service</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Customer:</p>
+                                                                     <p>Xiaomi</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>Max kW:</p>
+                                                                     <p>20</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Breakers</p>
+                                                                  </div>
+                                                                  <div class="content">
+                                                                     <p>#Xconnects</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="triangle-left"></div>
+                                                            </div>
+                                                            </p>
+                                                            <p class="me_hide ct_main">003-0101
+                                                            </p>
                                                             <div class="one_bottom-2">
                                                                <img src="images/black-1.png">
                                                             </div>
@@ -310,46 +922,714 @@ button.btn-crah.beven-2 {
                                                 <div class="row" style="padding: 0px 17px;">
                                                    <div class="bottom_data">
                                                       <div class="data_block">
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         </p>
                                                       </div>
                                                       <div class="data_block">
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
                                                       </div>
                                                       <div class="data_block">
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
                                                       </div>
                                                       <div class="data_block">
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
                                                       </div>
                                                       <div class="data_block">
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
                                                       </div>
                                                       <div class="data_block">
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
                                                       </div>
                                                       <div class="data_block">
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
-                                                         <p>003-0101</p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
+                                                         <p class="ct_main">003-0101
+                                                         <div class="info_ct">
+                                                            <div class="innr_ct">
+                                                               <div class="content">
+                                                                  <p>Status:</p>
+                                                                  <p>In Service</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Customer:</p>
+                                                                  <p>Xiaomi</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>Max kW:</p>
+                                                                  <p>20</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Breakers</p>
+                                                               </div>
+                                                               <div class="content">
+                                                                  <p>#Xconnects</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="triangle-left"></div>
+                                                         </div>
+                                                         </p>
                                                       </div>
                                                    </div>
                                                 </div>
