@@ -239,3 +239,23 @@ button.btn.btn-light {
     margin: 10px 0px;
 }
 }
+
+/*dashboard-2 css*/
+
+ul.tabs_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul.tabs_card li.tc-1 {
+    margin: 0px 2rem 0px 1rem;
+}
+li.tc-1.active {
+    color: #000;
+    font-weight: 500;
+}
+li.tc-1{
+    color: #92979A;
+    font-size: 0.875;
+    font-family: 'DM Sans';
+}
