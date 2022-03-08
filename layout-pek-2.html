@@ -26,7 +26,7 @@
     width: 125px;
     top: 39.5%;
     left: 24%;
-    display: block;
+    display: none;
     z-index: 9999;
 }
 .pop-hover p {
@@ -57,6 +57,9 @@
 }
 path#red-line {
     cursor: pointer;
+}
+path#red-line:hover + .pop-hover{
+   display: block;
 }
 .svg-pic svg {
     width: 100%;
