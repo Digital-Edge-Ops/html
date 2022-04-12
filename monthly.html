@@ -88,6 +88,18 @@ th.entvs{
 }
 
 /*New up table code strat*/
+table.table.table-borderless.tb_dcp tr td {
+    padding: 2px 5px !important;
+}
+table.table.table-borderless.tb_dcp tr td input {
+    height: 20px;
+}
+table.table.table-borderless.tb_dcp tr td span {
+    border-radius: 3px;
+}
+table.table.table-borderless.tb_dcp_view tr td {
+    padding: 2px 22px !important;
+}
 
 /*New up table code end*/
       </style>
@@ -127,16 +139,10 @@ th.entvs{
                </div>
             </div>
             <div class="table_monthly mt-4" style="overflow-x: auto;">
-               <table class="table table-bordered tb_dcp" style="width: 350px; white-space: nowrap;">
+               <table class="table table-borderless tb_dcp mb-4" style="width: 350px; white-space: nowrap;">
                   <thead>
                      <tr>
-                        <th class="text-start" style="font-weight: 600;">Data Cneter Performance</th>
-                        <th class="text-start"></th>
-                        <th class="text-start" style="padding: 1px 25px !important;"></th>
-                        <th class="text-start"></th>
-                        <th class="text-start"></th>
-                        <th class="text-start"></th>
-                         <th class="text-start"></th>
+                        <th colspan="7" class="text-start" style="font-weight: 600 !important; font-size: 1.2rem; border: none;">Data Center Performance</th>
                      </tr>
                      
                      <tr>
@@ -152,7 +158,7 @@ th.entvs{
                         <td class="text-start">Operating PUE</td>
                         <td class="text-start"><input type="text" value="1.46" style="width: 70px;"></td>
                         <td class="text-start"></td>
-                        <td class="text-start">Numbers</td>
+                        <td class="text-start">Number</td>
                         <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
                         <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
                         <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
@@ -161,7 +167,7 @@ th.entvs{
                         <td class="text-start">Design PUE</td>
                         <td class="text-start"><input type="text" value="1.5" style="width: 70px;"></td>
                         <td class="text-start"></td>
-                        <td class="text-start">Typess</td>
+                        <td class="text-start">Types</td>
                         <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
                         <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
                         <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
@@ -171,36 +177,111 @@ th.entvs{
                         <td class="text-start"><input type="text" value="3760" style="width: 70px;"></td>
                         <td class="text-start"></td>
                         <td class="text-start">Who's Impacted</td>
-                        <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
-                        <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
-                        <td class="text-start"><input type="text" name="" style="width: 70px;"></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: green; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-plus" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 4px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;">
+                        <span style="margin-left: 1px; cursor: pointer; background: green; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-plus" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 4px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;">
+                        <span style="margin-left: 1px; cursor: pointer; background: green; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-plus" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 4px;"></i> </span></td>
                      </tr>
                      <tr>
-                        <td class="text-start">Operating IT Cunsumtion</td>
+                        <td class="text-start">Operating IT Consumption</td>
                         <td class="text-start"><input type="text" value="691" style="width: 70px;"></td>
                         <td class="text-start" style="padding: 10px 25px !important;"></td>
                         <td class="text-start"></td>
-                        <td class="text-start"></td>
-                        <td class="text-start"></td>
-                        <td class="text-start"></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
                      </tr>
                      <tr>
-                        <td class="text-start" style="padding: 20px 25px !important;"></td>
                         <td class="text-start"></td>
                         <td class="text-start"></td>
                         <td class="text-start"></td>
                         <td class="text-start"></td>
-                        <td class="text-start"></td>
-                        <td class="text-start"></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
                      </tr>
                      <tr>
-                        <td class="text-start" style="padding: 20px 25px !important;"></td>
                         <td class="text-start"></td>
                         <td class="text-start"></td>
                         <td class="text-start"></td>
                         <td class="text-start"></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
+                        <td class="text-start"><input type="text" name="" style="width: 70px;"><span style="margin-left: 5px; cursor: pointer; background: red; color:#fff; padding: 2px 5px; font-size: 12px;"><i class="fa fa-times" aria-hidden="true" style="color:#fff; font-size: 12px; padding: 2px 5px;"></i></span></td>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="table table-borderless tb_dcp_view mb-4" style="width: 350px; white-space: nowrap;">
+                  <thead>
+                     <tr>
+                        <th colspan="7" class="text-start" style="font-weight: 600 !important; font-size: 1.2rem; border: none;">Data Center Performance</th>
+                     </tr>
+                     
+                     <tr>
+                        <td class="text-start" style="font-weight: 600;">Service Availability:</td>
+                        <td class="text-start">100.00%</td>
+                        <td class="text-start"></td>
+                        <td class="text-start" style="background:#595959; color: #fff;">Incidents</td>
+                        <td class="text-start" style="background:#595959; color: #fff;">Infra</td>
+                        <td class="text-start" style="background:#595959; color: #fff;">Security</td>
+                        <td class="text-start" style="background:#595959; color: #fff;">EHS</td>
+                     </tr>
+                     <tr>
+                        <td class="text-start">Operating PUE</td>
+                        <td class="text-start">1.46</td>
+                        <td class="text-start"></td>
+                        <td class="text-start">Number</td>
+                        <td class="text-start">768</td>
+                        <td class="text-start">-</td>
+                        <td class="text-start">98</td>                     </tr>
+                     <tr>
+                        <td class="text-start">Design PUE</td>
+                        <td class="text-start">1.5</td>
+                        <td class="text-start"></td>
+                        <td class="text-start">Types</td>
+                        <td class="text-start">768</td>
+                        <td class="text-start">-</td>
+                        <td class="text-start">98</td>
+                     </tr>
+                     <tr>
+                        <td class="text-start">Installed IT Capacity (KVA)</td>
+                        <td class="text-start">3760</td>
+                        <td class="text-start"></td>
+                        <td class="text-start">Who's Impacted</td>
+                        <td class="text-start">768</td>
+                        <td class="text-start">-</td>
+                        <td class="text-start">98</td>
+                     </tr>
+                     <tr>
+                        <td class="text-start">Operating IT Consumption</td>
+                        <td class="text-start">691</td>
+                        <td class="text-start" style="padding: 10px 25px !important;"></td>
+                        <td class="text-start"></td>
+                        <td class="text-start">768</td>
+                        <td class="text-start">-</td>
+                        <td class="text-start">98</td>
+                        
+                     </tr>
+                     <tr>
                         <td class="text-start"></td>
                         <td class="text-start"></td>
+                        <td class="text-start"></td>
+                        <td class="text-start"></td>
+                        <td class="text-start">768</td>
+                        <td class="text-start">-</td>
+                        <td class="text-start">98</td>
+                        
+                     </tr>
+                     <tr>
+                        <td class="text-start"></td>
+                        <td class="text-start"></td>
+                        <td class="text-start"></td>
+                        <td class="text-start"></td>
+                        <td class="text-start">768</td>
+                        <td class="text-start">-</td>
+                        <td class="text-start">98</td>
+                        
                      </tr>
                   </thead>
                </table>
