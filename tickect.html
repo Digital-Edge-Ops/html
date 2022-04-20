@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link href="css\dashborad.css" rel="stylesheet">
+      <link href="css\style.css" rel="stylesheet">
+      <title>Digital Edge</title>
+      <style>
+         a.nav-link.setting img{
+         margin-top: 0.813rem;
+         }
+         table {
+         border-collapse: collapse;
+         width: 100%;
+         }
+         .table th, .table td {
+         border-color: #f5f5f5;
+         padding: 0.9rem 1rem;
+         }
+         th{
+         padding: 0.5rem 10px !important;
+         text-align: left;
+         border-bottom: 1px solid #E7E8E9;
+         color: #92979A;
+         font-size: 1rem!important;
+         font-weight: 400;
+         border-bottom: 1px solid #E7E8E9;
+         }
+         td{
+         padding: 0.5rem 10px !important;
+         text-align: left;
+         border-bottom: 1px solid #E7E8E9;
+         color: #171C3C;
+         font-size: 0.9375rem!important;
+         font-weight: 400;
+         } 
+         }   
+         .btn {
+         padding: 0.4rem 3rem;
+         border-radius: 0;
+         font-weight: 400;
+         font-size: 18px;
+         margin: 0px 0px;
+         }
+         .profile-tab .nav-item .nav-link {
+         font-size: 1.063rem;
+         }
+         .profile-tab .nav-item .nav-link {
+         font-size: 1.063rem;
+         padding: 10px 12px;
+         height: 4rem;}
+         #title h4.card-title {
+         font-size: 1.688rem;
+         margin-bottom: 0;
+         font-weight: 600;
+         color: #171c3c;
+         font-family: 'DM Sans';
+         }
+         .card-body {
+         padding: 0rem 0rem 0rem;
+         }
+   /*      th.pd-l {
+         padding-left: 2.438rem!important;
+         }
+         td.pd-l {
+    padding-left: 2.438rem!important;
+}*/
+         th.pd-l.bold-txt {
+         font-size: 0.9375rem;
+         color: #171C3C;
+         font-family: 'DM SANS';
+         font-weight: 600;
+         }
+         .table tbody tr td {
+    vertical-align: middle;
+    border-color: #f5f5f5;
+    box-shadow: 0px 1px 0px #e7e8e9;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 0.813rem !important;
+    font-family: 'DM SANS';
+    color: #171C3C;
+    padding: 1.25rem 0px;
+}
+th {
+    padding: 0.5rem 10px;
+    text-align: left;
+    border-bottom: 1px solid #E7E8E9;
+    color: #92979A;
+    font-size: 0.875rem!important;
+    font-weight: 400;
+}
+.grid_card.grid_mr.h-100.tckt .card_head {
+    padding: 0.6rem 0.5rem 0.6rem 0.6rem;
+}
+.grid_card.grid_mr.h-100.tckt ul.tabs_card li.tc-1.active{
+   color: #11263C;
+}
+.grid_card.grid_mr.h-100.tckt ul.tabs_card li.tc-1{
+   margin: 0px 2rem 0px 0rem;
+   color: #92979A;
+   font-size: 0.938rem;
+}
+
+
+.grid_card.grid_mr.h-100.tckt ul.tabs_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+.profile-tab .btn-light {
+    background: #EAECF2;
+    border-color: #EAECF2;
+    color: #000;
+    padding: 0.2rem 1.5rem;
+}
+.red_dot{
+   height: 10px;
+    width: 10px;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    background-color: #E03138;
+}
+.or_dot{
+   height: 10px;
+    width: 10px;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    background-color: #FE8600;
+}
+.ylw_dot{
+   height: 10px;
+    width: 10px;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    background-color: #F2DC33;
+}
+.grid_card.grid_mr.h-100.tckt li.tc-1.active {
+    color: #11263C;
+    font-weight: 600;
+    font-size: 14px;
+}
+.grid_card.grid_mr.h-100.tckt li.tc-1 {
+    color: #11263C;
+    font-weight: 400;
+    font-size: 14px;
+}
+      </style>
+   </head>
+   <body style="background: #F5F6FA;">
+      <div class="container-fluid pb-5">
+         <div class="row pt-2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 gx-4">
+               <div class="row g-2">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 mb-3">
+                     <div class="grid_card">
+                        <div class="card_head">
+                           <div class="txt_card">
+                              <h3>Incidents</h3>
+                           </div>
+                           <div class="txt_card_2">
+                              <p><img src="images/red.png" width="15px">S1</p>
+                              <p><img src="images/orange-1.png" width="15px">S2</p>
+                              <p><img src="images/yellow.png" width="15px">S3</p>
+                           </div>
+                        </div>
+                        <div class="card_diag">
+                           <img src="images/red-o.png" width="60%">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                     <div class="grid_card">
+                        <div class="card_head">
+                           <div class="txt_card">
+                              <h3>Faults</h3>
+                           </div>
+                           <div class="txt_card_2">
+                              <p><img src="images/red.png" width="15px">S1</p>
+                              <p><img src="images/orange-1.png" width="15px">S2</p>
+                              <p><img src="images/yellow.png" width="15px">S3</p>
+                           </div>
+                        </div>
+                        <div class="card_diag">
+                           <img src="images/red-o.png" width="60%">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                     <div class="grid_card">
+                        <div class="card_head">
+                           <div class="txt_card">
+                              <h3>Site Visits</h3>
+                           </div>
+                           <div class="txt_card_2">
+                              <p><img src="images/red.png" width="15px">Today</p>
+                              <p><img src="images/orange-1.png" width="15px">Tomorrow</p>
+                           </div>
+                        </div>
+                        <div class="card_diag">
+                           <img src="images/red-o.png" width="60%">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                     <div class="grid_card grid_mr">
+                        <div class="card_head">
+                           <div class="txt_card">
+                              <h3>Shipments</h3>
+                           </div>
+                           <div class="txt_card_2">
+                              <p><img src="images/red.png" width="15px">Today</p>
+                              <p><img src="images/orange-1.png" width="15px">Tomorrow</p>
+                           </div>
+                        </div>
+                        <div class="card_diag">
+                           <img src="images/red-o.png" width="60%">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                 <div class="invglob">
+                   <div class="profile-tab">
+                           <div class="custom-tab-1">
+                              <ul class="nav nav-tabs">
+                                 <li class="nav-item"> <button class="btn btn-light" > Incidents</button></li>
+                                 <li class="nav-item"> <button class="btn btn-secondary" >Faults</button></li>
+                                 <li class="nav-item"> <button class="btn btn-light" > Shipment</button></li>
+                                 <li class="nav-item"> <button class="btn btn-light" > Remote Hands</button></li>
+                                 <li class="nav-item"> <button class="btn btn-light" > Provisioning</button></li>
+                              </ul>
+                           </div>
+                        </div>
+                 </div>
+               </div>
+               <div class="row mt-3">
+                  <div class="col-lg-12 col-md-8 col-sm-12 col-12">
+                     <div class="grid_card grid_mr h-100 tckt">
+                        <div class="card_head">
+                           <div class="txt_card">
+                              <ul class="tabs_card">
+                                 <li class="tc-1 active">Colo</li>
+                                 <li class="tc-1">M&E</li>
+                                 <li class="tc-1">Network</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="card-body">
+                                 <div class="table-responsive">
+                                    <table class="table header-border table-borderless table-hover verticle-middle">
+                                       <thead>
+                                          <tr>
+                                             <th scope="col" class="pd-l">Ticket #</th>
+                                             <th scope="col">Ticket Name</th>
+                                             <th scope="col">DC</th>
+                                             <th scope="col">Severity</th>
+                                             <th scope="col">Timestamp</th>
+                                             <th scope="col">Stage</th>
+                                             <th scope="col">Customer</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody id="cardnew">
+                                          <tr>
+                                             <td class="pd-l bold-txt">189</td>
+                                             <td class="pd-l bold-txt">Power strip lost power</td>
+                                             <td class="pd-l bold-txt">TYO3</td>
+                                             <td class="pd-l bold-txt">S1</td>
+                                             <td class="pd-l bold-txt">2021-12-30 12:35 PM</td>
+                                             <td> <span class="badge badge-success badge-lg light">Active</span>  </td>
+                                             <td class="pd-l bold-txt">Japan Media</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="pd-l bold-txt">188</td>
+                                             <td class="pd-l bold-txt">Temperature too warm</td>
+                                             <td class="pd-l bold-txt">TYO3</td>
+                                             <td class="pd-l bold-txt">S2</td>
+                                             <td class="pd-l bold-txt">2022-02-07 08:29 PM</td>
+                                             <td> <span class="badge badge-success badge-lg light">Active</span>  </td>
+                                             <td class="pd-l bold-txt">Misuho</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="pd-l bold-txt">189</td>
+                                             <td class="pd-l bold-txt">Power strip lost power</td>
+                                             <td class="pd-l bold-txt">TYO3</td>
+                                             <td class="pd-l bold-txt">S3</td>
+                                             <td class="pd-l bold-txt">2021-12-30 12:35 PM</td>
+                                             <td> <span class="badge badge-success badge-lg light">Active</span>  </td>
+                                             <td class="pd-l bold-txt">Technomax</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Optional JavaScript; choose one of the two! -->
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+         -->
+   </body>
+</html>
