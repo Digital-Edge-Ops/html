@@ -150,6 +150,11 @@ th {
     font-weight: 400;
     font-size: 14px;
 }
+@media (max-width: 767px){
+   .tckect_tt{
+      overflow-x: auto;
+   }
+}
       </style>
    </head>
    <body style="background: #F5F6FA;">
@@ -228,7 +233,7 @@ th {
                  <div class="invglob">
                    <div class="profile-tab">
                            <div class="custom-tab-1">
-                              <ul class="nav nav-tabs">
+                              <ul class="nav nav-tabs" style="flex-wrap:nowrap; overflow-x:auto; padding-bottom: .5rem;">
                                  <li class="nav-item"> <button class="btn btn-light" > Incidents</button></li>
                                  <li class="nav-item"> <button class="btn btn-secondary" >Faults</button></li>
                                  <li class="nav-item"> <button class="btn btn-light" > Shipment</button></li>
@@ -240,7 +245,7 @@ th {
                  </div>
                </div>
                <div class="row mt-3">
-                  <div class="col-lg-12 col-md-8 col-sm-12 col-12">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                      <div class="grid_card grid_mr h-100 tckt">
                         <div class="card_head">
                            <div class="txt_card">
@@ -252,7 +257,7 @@ th {
                            </div>
                         </div>
                         <div class="card-body">
-                                 <div class="table-responsive">
+                                 <div class="table-responsive tckect_tt">
                                     <table class="table header-border table-borderless table-hover verticle-middle">
                                        <thead>
                                           <tr>
