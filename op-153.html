@@ -75,10 +75,7 @@
     content: "\f0d7";
     font-size: 11px;
 }
-.ttl_op-153 h6 {
-    font-size: 15px;
-    font-weight: 600;
-} 
+ 
 i.fa.fa-caret-down{
    cursor: pointer;
 }
@@ -249,7 +246,7 @@ i.fa.fa-caret-down{
                                  </thead>
                                  <tbody>
                                     <tr>
-                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit"></i><span class="edit"></span></span></td>
+                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit" data-bs-toggle="modal" data-bs-target=".update_Popup"></i><span class="edit"></span></span></td>
                                        <td width="1%">48</td>
                                        <td width="1%"><a href="#" style="color: #147AD6; text-decoration: underline;">View</a></td>
                                        <td width="1%">1F</td>
@@ -258,7 +255,7 @@ i.fa.fa-caret-down{
                                        <td width="20%"></td>  
                                     </tr>
                                     <tr>
-                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit"></i><span class="edit"></span></span></td>
+                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit" data-bs-toggle="modal" data-bs-target=".update_Popup"></i><span class="edit"></span></span></td>
                                        <td width="1%">48</td>
                                        <td width="1%"><a href="#" style="color: #147AD6; text-decoration: underline;">View</a></td>
                                        <td width="1%">1F</td>
@@ -267,7 +264,7 @@ i.fa.fa-caret-down{
                                        <td width="20%"></td>  
                                     </tr>
                                     <tr>
-                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit"></i><span class="edit"></span></span></td>
+                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit" data-bs-toggle="modal" data-bs-target=".update_Popup"></i><span class="edit"></span></span></td>
                                        <td width="1%">48</td>
                                        <td width="1%"><a href="#" style="color: #147AD6; text-decoration: underline;">View</a></td>
                                        <td width="1%">1F</td>
@@ -276,7 +273,7 @@ i.fa.fa-caret-down{
                                        <td width="20%"></td>  
                                     </tr>
                                     <tr>
-                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit"></i><span class="edit"></span></span></td>
+                                       <td width="12%">PEK1-01-MMR1-0201-PP001 <span><i class="fas fa-edit" data-bs-toggle="modal" data-bs-target=".update_Popup"></i><span class="edit"></span></span></td>
                                        <td width="1%">48</td>
                                        <td width="1%"><a href="#" style="color: #147AD6; text-decoration: underline;">View</a></td>
                                        <td width="1%">1F</td>
@@ -292,25 +289,54 @@ i.fa.fa-caret-down{
                      </div>
                   </div> 
                </div>
-               <!-- <div class="modal fade bd-example-modal-lg" tabindex="-1" role=" dialog" aria-hidden="true">
+               <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                            <div class="modal-content">
                               <div class="modal-header mt-59">
-                                 <h3 class="modal-title">Update Device Details</h3>
+                                 <h3 class="modal-title">Add Patch Panel</h3>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
                               </div>
                               <div class="modal-body">
                                  <div class="card">
                                     <div class="card-body" style="padding: 0px;">
+                                       <p>PEK1</p>
                                        <div class="basic-form">
                                           <form>
                                              <div class="row">
-                                                <div class="col-md-6 mt-2313">
-                                                   <label class="form-label"> Hostname</label>
-                                                   <input type="text" class="form-control" placeholder="Distributed Routers"/>
+                                                <div class="col-md-12 mt-2313">
+                                                   <label class="form-label"> Name: <span class="text-danger">*</span></label>
+                                                   <input type="text" class="form-control" placeholder=""/>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Cabinet / Rack: <span class="text-danger">*</span></label>
+                                                   <select class="selectpicker">
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6 mt-2313">
-                                                   <label class="form-label"> Make</label>
+                                                   <label class="form-label"> Top U Position: <span class="text-danger">*</span></label>
+                                                   <select class="selectpicker">
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Vendor:</label>
+                                                   <select class="selectpicker">
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Model:</label>
                                                    <select class="selectpicker">
                                                       <option>N/A</option>
                                                       <option>N/A</option>
@@ -319,51 +345,30 @@ i.fa.fa-caret-down{
                                                 </div>
                                              </div>
                                              <div class="row">
-                                                <div class="col-md-6 mt-2313">
-                                                   <label class="form-label"> Function</label>
-                                                   <input type="text" class="form-control" placeholder="N/A"/>
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> # Of Ports: <span class="text-danger">*</span></label>
+                                                   <select class="selectpicker">
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6 mt-2313">
-                                                   <label class="form-label">Model</label>
+                                                   <label class="form-label"> Status: <span class="text-danger">*</span></label>
                                                    <select class="selectpicker">
-                                                      <option>QFXS-220-32CD</option>
-                                                      <option>QFXS-220-32CD</option>
-                                                      <option>QFXS-220-32CD</option>
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
                                                    </select>
                                                 </div>
                                              </div>
                                              <div class="row">
-                                                <div class="col-md-6 mt-2313">
-                                                   <label class="form-label"> Serial Number</label>
-                                                   <input type="text" class="form-control" placeholder="N/A"/>
-                                                </div>
-                                                <div class="col-md-6 mt-2313">
-                                                   <label class="form-label"> Cabinet ID</label>
-                                                   <input type="text" class="form-control" placeholder="N/A"/>
+                                                <div class="col-md-12 col-sm-12 mt-2313">
+                                                   <label class="form-label"> Description:</label>
+                                                   <textarea class="form-control" style="height:70px;"></textarea>
                                                 </div>
                                              </div>
-                                             <div class="row">
-                                                <div class="col-md-6 mt-2313">
-                                                   <label class="form-label"> Status</label>
-                                                   <input type="text" class="form-control" placeholder="N/A"/>
-                                                </div>
-                                                <div class="col-md-6 mt-2313">
-                                                   <label class="form-label"> Top U Position</label>
-                                                   <input type="text" class="form-control" placeholder="N/A"/>
-                                                </div>
-                                             </div>
-                                             <div class="row">
-                                             	<h5 class="mt-3" style="color: #147AD6; font-weight:700; margin-bottom: 0px;">Maintenance & Support</h5>
-                                                <div class="col-md-6 mt-2">
-                                                   <label class="form-label"> Status</label>
-                                                   <input type="text" class="form-control" placeholder="N/A"/>
-                                                </div>
-                                                <div class="col-md-6 mt-2">
-                                                   <label class="form-label"> Expiry Date</label>
-                                                   <input type="date" class="form-control" placeholder="Date" onfocus="(this.type='date')"/>
-                                                </div>
-                                             </div>
-                                             <div class="toolbar toolbar-bottom mt-51 d-flex justify-content-end" role="toolbar">	 
+                                             <div class="toolbar toolbar-bottom mt-51 d-flex justify-content-end" role="toolbar">    
                                                 <button type="button" class="btn btn-outline-primary mr_1"> Cancel </button>
                                                 <button type="submit" class="btn btn-primary">Save</button>
                                              </div>
@@ -374,7 +379,103 @@ i.fa.fa-caret-down{
                               </div>
                            </div>
                         </div>
-                     </div> -->
+                     </div>
+
+                     <div class="modal fade bd-example-modal-lg update_Popup" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                           <div class="modal-content">
+                              <div class="modal-header mt-59">
+                                 <h3 class="modal-title">Update Patch Panel</h3>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                              </div>
+                              <div class="modal-body">
+                                 <div class="card">
+                                    <div class="card-body" style="padding: 0px;">
+                                       <p>PEK1</p>
+                                       <div class="basic-form">
+                                          <form>
+                                             <div class="row">
+                                                <div class="col-md-12 mt-2313">
+                                                   <label class="form-label"> Name: <span class="text-danger">*</span></label>
+                                                   <input type="text" class="form-control" placeholder=""/>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Cabinet / Rack: <span class="text-danger">*</span></label>
+                                                   <select class="selectpicker">
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Top U Position: <span class="text-danger">*</span></label>
+                                                   <select class="selectpicker">
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Vendor:</label>
+                                                   <select class="selectpicker">
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Model:</label>
+                                                   <select class="selectpicker">
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> # Of Ports: <span class="text-danger">*</span></label>
+                                                   <select class="selectpicker">
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 mt-2313">
+                                                   <label class="form-label"> Status: <span class="text-danger">*</span></label>
+                                                   <select class="selectpicker">
+                                                      <option></option>
+                                                      <option>N/A</option>
+                                                      <option>N/A</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12 col-sm-12 mt-2313">
+                                                   <label class="form-label"> Description:</label>
+                                                   <textarea class="form-control" style="height:70px;"></textarea>
+                                                </div>
+                                             </div>
+                                             <div class="toolbar toolbar-bottom mt-51 d-flex" role="toolbar">
+                                             <div class="delt" style="margin-right: 25px;">
+                                                <button type="button" class="btn btn-outline-primary mr_1 red_color"><img src="images/trash-2.svg" style="width: 11px; margin-top: -0.188rem;"> Delete</button>
+                                             </div>    
+                                                <button type="button" class="btn btn-outline-primary mr_1"> Cancel </button>
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
             </div>
          </div>
       </div>
