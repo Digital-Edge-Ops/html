@@ -21,6 +21,64 @@ select.selectpicker {
     padding: 0.625rem 2rem;
     font-size: 1.063rem;
     width: 12.813rem;
+}
+
+/*Card Css Start*/
+.box_total {
+    border: 1px solid #157DDB;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 5px 5px 0px 0px;
+}
+.box_total h4 {
+    background-color: #157ddb;
+    border-radius: 4px 4px 0px 0px;
+    padding: .3rem 0px;
+    font-size: 1rem;
+    color: #fff;
+}
+.box_total p {
+    font-size: 3rem;
+    color: #157DDB;
+    font-weight: 700;
+}
+.box_active {
+    border: 1px solid #59C60C;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 5px 5px 0px 0px;
+}
+.box_active h4 {
+    background-color: #59C60C;
+    border-radius: 4px 4px 0px 0px;
+    padding: .3rem 0px;
+    font-size: 1rem;
+    color: #fff;
+}
+.box_active p {
+    font-size: 3rem;
+    color: #59C60C;
+    font-weight: 700;
+}
+.box_Pending {
+    border: 1px solid #F57016;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 5px 5px 0px 0px;
+}
+.box_Pending h4 {
+    background-color: #F57016;
+    border-radius: 4px 4px 0px 0px;
+    padding: .3rem 0px;
+    font-size: 1rem;
+    color: #fff;
+}
+.box_Pending p {
+    font-size: 3rem;
+    color: #F57016;
+    font-weight: 700;
+}
+/*Card Css End*/
  </style>
 	
 </head>
@@ -120,6 +178,30 @@ select.selectpicker {
 					
 	 
           <div class="container-fluid">	
+          	<!-- Card HTML start -->
+          	<div class="user_cards mt-2">
+          		<div class="row">
+          		    <div class="col-12 col-sm-12 col-md-3">
+          		    	<div class="box_total">
+          		    		<h4>Total</h4>
+          		    		<p total_num>52</p>
+          		    	</div>
+          		    </div>
+          		    <div class="col-12 col-sm-12 col-md-3">
+          		    	<div class="box_active">
+          		    		<h4>Total</h4>
+          		    		<p total_num>39</p>
+          		    	</div>
+          		    </div>
+          		    <div class="col-12 col-sm-12 col-md-3">
+          		    	<div class="box_Pending">
+          		    		<h4>Total</h4>
+          		    		<p total_num>13</p>
+          		    	</div>
+          		    </div>
+          	    </div>
+          	</div>
+          	<!-- Card HTML End -->
     	    <div class="row"> 
 			    <div>
 			    <a href="#" id="addnew" class="btn btn-primary me-3 btn-sm" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg"><img src="images/plus-circle.svg">&nbsp; Add New User  </a>	

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- PAGE TITLE HERE -->
+      <title>OP-196</title>
+      <link href="css\style.css" rel="stylesheet">
+      <style>
+      @media (min-width: 992px){
+.modal-dialog.modal-lg.rack_eve {
+    max-width: 29rem;
+}
+}
+.modal-dialog.modal-lg.rack_eve .modal-body {
+    padding: 0rem 1.125rem 2.5rem 1.125rem !important;
+}
+.modal-dialog.modal-lg.rack_eve .modal-header{
+	padding: 0rem 1.125rem 0rem 1.125rem !important;
+}
+.modal-dialog.modal-lg.rack_eve .addrack {
+    border-radius: 0;
+    margin: 2em 0px;
+    padding: 10px 0rem;
+    font-size: 0.813rem!important;
+    font-weight: 600;
+    color: #1780df;
+}
+.modal-dialog.modal-lg.rack_eve .upload {
+    background: #EBEBEB;
+    padding: 2rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.upload label{
+	margin-bottom: 0px;
+	font-size: 0.938rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+.ars h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #171C3C;
+}
+.ars p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #171C3C;
+}
+.modal-dialog.modal-lg.rack_eve button.btn.btn-danger{
+	border-radius: 4px;
+}
+
+
+      </style>
+   </head>
+   <body>
+      <div id="main-wrapper">
+         <div class="header">
+            <div class="header-content">
+               <nav class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse justify-content-between">
+                     <div class="header-left">
+                        <div class="nav-header">
+                           <a href="index.html" class="brand-logo" id="headlogo">
+                           <img src="images\logo.png" alt=""/> </a>
+                        </div>
+                     </div>
+                     <ul class="navbar-nav header-right">
+                        <li class="nav-item dropdown notification_dropdown">
+                           <a class="nav-link setting" href="javascript:void(0);" data-bs-toggle="dropdown">
+                           <img src="images\settings-10@1x.png" alt=""/>									
+                           </a>
+                        </li>
+                        <li class="nav-item dropdown header-profile">
+                           <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                              <h4 class="pro">  DU  </h4>
+                              <div>
+                                 <span class="font-w400 d-block">Franklin Jr</span>
+                                 <small class="text-end font-w400" id="admin"> Admin </small>
+                              </div>
+                           </a>
+                           <i class="fa fa-caret-down" aria-hidden="true" id="don"></i>
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-end">
+                              <a href="app-profile.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                 </svg>
+                                 <span class="ms-2">Profile </span>
+                              </a>
+                              <a href="email-inbox.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                 </svg>
+                                 <span class="ms-2">Inbox </span>
+                              </a>
+                              <a href="page-error-404.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                 </svg>
+                                 <span class="ms-2">Logout </span>
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+        <div class="container-fluid">
+            <div class="row">
+               <div>
+                  <a href="#" id="addnew" class="btn btn-primary me-3 btn-sm" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg"> Open</a>
+                  <a href="#" id="addnew" class="btn btn-primary me-3 btn-sm" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg2"> Open2</a>	
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                     <div class="modal-dialog modal-lg rack_eve">
+                        <div class="modal-content">
+                           <div class="modal-header mt-59">
+                              <h3 class="modal-title">Rack Elevation</h3>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                           </div>
+                           <div class="modal-body">
+                              <div class="card">
+                                 <div class="card-body" style="padding: 0px;">
+                                 	<div class="row mt-3">
+                                 		<p style="font-size: 0.875rem;">SEL 1</p>
+                                 		<div class="text-center">
+                                 			<p class="font-weight-bold" style="font-size: 1rem; font-weight:700">New image will replace the existing one and not reversible one confirmed</p>
+                                 		</div>
+                                 		<div class="d-flex justify-content-between align-items-center">
+                                 			<p style="font-size: 0.938rem; font-weight: 600;">Select page 1 of 3 &nbsp;<span><img src="images/chevrons-left.svg" width="10px"></span>&nbsp;&nbsp;&nbsp;<span><img src="images/chevrons-right.svg" width="10px"></span></p>
+                                 			<a href="#" class="addrack"><img src="images/plus-circle-blue.svg" style="width: 1rem"> &nbsp;Add Page </a>
+                                 		</div>
+                                 	</div>
+                                    <div class="basic-form">
+                                    	<form>
+                                    		<div class="upload">
+                                    			<label for="file-upload" class="custom-file-upload">
+                                               <img src="images/upload.svg" width="12px;" style="margin-top: -4px;"> File Name
+                                            </label>
+                                            <input id="file-upload" type="file" class="d-none" />
+                                    		</div>
+                                       <div class="toolbar toolbar-bottom mt-51" role="toolbar" style="text-align: right;">	 
+                                          <button type="button" class="btn btn-outline-primary mr_1"> Cancel </button>
+                                          <button type="submit" class="btn btn-primary">Save</button>
+                                       </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-hidden="true">
+                     <div class="modal-dialog modal-lg rack_eve">
+                        <div class="modal-content">
+                           <div class="modal-header mt-59">
+                              <h3 class="modal-title"></h3>
+                              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"> </button> -->
+                           </div>
+                           <div class="modal-body">
+                              <div class="card">
+                                 <div class="card-body" style="padding: 0px;">
+                                 	<div class="row mt-3">
+                         
+                                 		<div class="text-center">
+                                 			<img src="images/alert-circle.svg" width="23%">
+                                 			<div class="mt-3 ars">
+                                 				<h5>Are you sure?</h5>
+                                 				<p>You won't be able to revert this!</p>
+                                 			</div>
+                                 		</div>
+                                 		
+                                 	</div>
+                                    <div class="basic-form">
+                                    	<form>
+                                       <div class="toolbar toolbar-bottom mt-51" role="toolbar" style="text-align: right;">	 
+                                          <button type="button" class="btn btn-primary mr_1">Replace it!</button>
+                                          <button type="submit" class="btn btn-danger">Cancel</button>
+                                       </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <script src="js\global.min.js"></script>
+      <script src="js\custom.min.js"></script>
+      <script src="js\dlabnav-init.js"></script>
+   </body>
+</html>
