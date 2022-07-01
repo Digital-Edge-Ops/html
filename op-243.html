@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- PAGE TITLE HERE -->
+      <title>OP-243</title>
+      <link href="css\style.css" rel="stylesheet">
+      <style>
+      table {
+         border-collapse: collapse;
+         width: 100%;
+         }
+         .table th, .table td {
+         border-color: #f5f5f5;
+         padding: 0.9rem 1rem;
+         }
+         th{
+         padding: 0.5rem 10px !important;
+         text-align: left;
+         border-bottom: 1px solid #E7E8E9;
+         color: #92979A;
+         font-size: 1rem!important;
+         font-weight: 400;
+         }
+         td{
+         padding: 0.5rem 10px !important;
+         text-align: left;
+         border-bottom: 1px solid #E7E8E9;
+         color: #171C3C;
+         font-size: 0.9375rem!important;
+         font-weight: 400;
+         } 
+         }   
+         .btn {
+         padding: 0.4rem 3rem;
+         border-radius: 0;
+         font-weight: 400;
+         font-size: 18px;
+         margin: 0px 0px;
+         }
+         .profile-tab .nav-item .nav-link {
+         font-size: 1.063rem;
+         }
+         #title h4.card-title {
+         font-size: 1.688rem;
+         margin-bottom: 0;
+         font-weight: 600;
+         color: #171c3c;
+         font-family: 'DM Sans';
+         }
+         .card-body {
+         padding: 0rem 0rem 0rem;
+         }
+         th.pd-l {
+         padding-left: 2.438rem!important;
+         }
+         th.pd-l.bold-txt {
+         font-size: 0.9375rem;
+         color: #171C3C;
+         font-family: 'DM SANS';
+         font-weight: 600;
+         }
+        
+.profile-tab .nav-item .nav-link {
+    font-size: 1.063rem;
+}
+
+.profile-tab .nav-item .nav-link {
+    font-size: 1.063rem;
+    padding: 10px 12px;
+    height: 2.9rem;
+}
+
+    #title h4.card-title {
+    font-size: 1.688rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #171c3c;
+    font-family: 'DM Sans';
+}
+.de_line_btn button {
+    height: 26px;
+    line-height: 8px;
+    padding: 1px;
+    width: 100%;
+    font-size: 0.813rem;
+}
+.de_line_btn {
+    display: flex;
+}
+.overview_box img {
+    width: 70px;
+    margin: 2rem auto;
+}
+.overview_box {
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.overview_box p {
+    font-size: 1rem;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+      </style>
+   </head>
+   <body>
+      <div id="main-wrapper">
+         <div class="header">
+            <div class="header-content">
+               <nav class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse justify-content-between">
+                     <div class="header-left">
+                        <div class="nav-header">
+                           <a href="index.html" class="brand-logo" id="headlogo">
+                           <img src="images\logo.png" alt=""/> </a>
+                        </div>
+                     </div>
+                     <ul class="navbar-nav header-right">
+                        <li class="nav-item dropdown notification_dropdown">
+                           <a class="nav-link setting" href="javascript:void(0);" data-bs-toggle="dropdown">
+                           <img src="images\settings-10@1x.png" alt=""/>                                    
+                           </a>
+                        </li>
+                        <li class="nav-item dropdown header-profile">
+                           <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                              <h4 class="pro">  DU  </h4>
+                              <div>
+                                 <span class="font-w400 d-block">Franklin Jr</span>
+                                 <small class="text-end font-w400" id="admin"> Admin </small>
+                              </div>
+                           </a>
+                           <i class="fa fa-caret-down" aria-hidden="true" id="don"></i>
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-end">
+                              <a href="app-profile.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                 </svg>
+                                 <span class="ms-2">Profile </span>
+                              </a>
+                              <a href="email-inbox.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                 </svg>
+                                 <span class="ms-2">Inbox </span>
+                              </a>
+                              <a href="page-error-404.html" class="dropdown-item ai-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                 </svg>
+                                 <span class="ms-2">Logout </span>
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="content-body">
+            <div class="container-fluid">
+               <div id="title">
+                  <h4 class="card-title"> Settings </h4>
+                  <p>  Manage users and set roles and permissions </p>
+               </div>
+               <div class="card-header" id="header">
+                  <div class="d-sm-flex d-block justify-content-between align-items-center">
+                     <div class="card-action coin-tabs mt-3 mt-sm-0">
+                        <ul class="nav nav-tabs" role="tablist">
+                           <li class="nav-item gap_s">
+                              <a class="nav-link" id="tab1" data-bs-toggle="tab" href="#"> User Management </a>
+                           </li>
+                           <li class="nav-item gap_s">
+                              <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#"> Roles & Permissions </a>
+                           </li>
+                           <li class="nav-item gap_s">
+                              <a class="nav-link active" id="tab3" data-bs-toggle="tab" href="#"> Data Centres </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <hr class="main">
+               <div class="row">
+                  <div class="col-xl-1">
+                     <div class="leftside">
+                        <p> <a href="#"  class="plink">Inventory</a> </p>
+                        <p> <a href="#"  class="plink active">Pwr Dist</a> </p>
+                        <p> <a href="#"  class="plink"> Capacity </a> </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-11">
+                     <div id="pro">
+                        <div class="profile-tab">
+                           <div class="custom-tab-1">
+                              <div class="main_scrll">
+                                 <div class="btn_ul">
+                                    <ul class="nav nav-tabs mb-3">
+                                 <li class="nav-item"> <button class="btn btn-secondary" > Global </button></li>
+                                 <li class="nav-item">
+                                    <div class="btn-group" role="group">
+                                       <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Country </button>
+                                       <div class="dropdown-menu" style="margin: 0px;">
+                                          <a class="dropdown-item" href="javascript:void()">Country </a>
+                                          <a class="dropdown-item" href="javascript:void()">Country </a>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 </ul> 
+                                 </div>
+                                 <div class="ul_scrll">
+                                    <ul class="nav nav-tabs mb-3">
+                                 <li class="nav-item"><a href="#" class="nav-link">TYO1</a></li>
+                                 <li class="nav-item"><a href="#" class="nav-link">TYO2</a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link active show"> <img class="down" src="images/downward-arrow.png">TYO3</a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> OSA1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> SEL1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> PUS1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> PEK1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> JKT1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> MNL1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> MNL1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> MNL1 </a> </li>
+                                 <li class="nav-item"><a href="#" class="nav-link"> MNL1 </a> </li>
+                              </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="title">
+                           <div class="row">
+                              <div class="col-12 col-sm-12 col-lg-6">
+                              <p>Latest update 2022-04-22 12:22 HKT</p>
+                           </div>
+                           </div>
+                        </div>
+                        <div class="row mt-3">
+                           <div class="col-12 col-sm-12 col-lg-6 col-xl-5">
+                              <div class="de_line_btn">
+                              <button type="button" class="btn btn-secondary">Overview</button>
+                              <button class="btn btn-light" >UPS</button>
+                              <button type="button" class="btn btn-light ">RPPs</button>
+                              <button type="button" class="btn btn-light">Breakers</button>
+                           </div>
+                           </div></div>
+                           <div class="col-12 col-sm-12 col-lg-6"></div>
+                        </div>
+                          <div class="row my-3">
+                             <div class="col-12 col-sm-12 col-lg-12">
+                                <div class="form-check d-flex align-items-center">
+                                 <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                                 <label class="form-check-label" for="flexRadioDefault1" style="margin-bottom:0px;">Select all pr click on device below to view up and downstream components 
+                                 </label>
+                              </div>
+                             </div>
+                          </div>
+                          <div class="pic_flex_box">
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                <div class="overview_box">
+                                   <img src="images/generator.png">
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                </div>
+                             </div>
+                             <div class="col-12 col-sm-12 col-md-3">
+                                <div class="overview_box">
+                                   <img src="images/transformer.png">
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                </div>
+                             </div>
+                             <div class="col-12 col-sm-12 col-md-3">
+                                <div class="overview_box">
+                                   <img src="images/ups.png">
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                </div>
+                             </div>
+                             <div class="col-12 col-sm-12 col-md-3">
+                                <div class="overview_box">
+                                   <img src="images/breaker.png">
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                   <p>PEK1-GEN-110-EG1</p>
+                                </div>
+                             </div>
+                             </div>
+                          </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <script src="js\global.min.js"></script>
+      <script src="js\custom.min.js"></script>
+      <script src="js\dlabnav-init.js"></script>
+   </body>
+</html>
