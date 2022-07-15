@@ -3281,13 +3281,16 @@ color: #147ddb;
 
 
 img.down {
-  width: 24px!important;
-  position: absolute;
-  margin: 0px;
-  text-align: center;
-  bottom: -17px;
-  left: 0.6rem;
+    width: 24px!important;
+    position: absolute;
+    margin: 0px;
+    text-align: center;
+    bottom: -17px;
+    left: 33%;
+    transform: translateX(-10%);
 }
+
+
 .reports-block #pro{
   margin-left: -5rem!important;
 }
@@ -3333,21 +3336,22 @@ padding: 10px 5px 10px 0px;
 }
 
 ul.nav.nav-tabs button.btn.btn-secondary {
-  padding: 0.2rem 2.5rem;
-  font-size: 1rem;
-  margin: 0px 0px;
-  font-family: 'DM SANS';
-  height: 2rem;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    margin: 0px 0px;
+    font-family: 'DM SANS';
+    height: 36px;
 }
 
 li.nav-item button.btn.btn-light.dropdown-toggle {
-  padding: 0.5rem 1.3rem;
-  font-size: 1rem;
-  margin: 0px 0px;
-  font-family: 'DM SANS';
-  margin-left: 0px;
-  height: 2rem;
-  width: 10.125rem;
+    padding: 0.5rem 1.3rem;
+    font-size: 1rem;
+    margin: 0px 0px;
+    font-family: 'DM SANS';
+    margin-left: 0px;
+    height: 36px;
+    width: 10.125rem;
+    line-height: 14px;
 }
 
 
@@ -30226,7 +30230,7 @@ button.btn.btn-outline-primary.mr_1 {
     margin-bottom: 1rem;
 }
 .btn_ul {
-    width: 26%;
+    width: 30%;
     margin-top: -1px;
 }
 .ul_scrll .nav {
@@ -30238,7 +30242,7 @@ button.btn.btn-outline-primary.mr_1 {
 .ul_scrll {
     overflow-x: auto;
     overflow-y: hidden;
-    width: 90%;
+    width: 70%;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -30371,3 +30375,5 @@ ul.nav.nav-tabs.custom-scroll-gap {
   border: none!important;
 } */
 /*# sourceMappingURL=style.css.map */
+
+
