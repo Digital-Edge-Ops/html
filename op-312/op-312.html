@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .op-312 {
+        position: relative;
+        overflow-x: auto;
+
+        padding: 6rem;
+        padding-left: 5rem;
+      }
+
+      .op-312 .main_col {
+        display: flex;
+        gap: 110px;
+      }
+
+      .op-312 .col_inner_1 {
+        display: flex;
+      }
+
+      .op-312 .col_inner_55 {
+        display: flex;
+      }
+
+      .op-312 p.num_data {
+        background: #fe8600;
+        color: #fff;
+        padding: 2px 0px;
+        font-size: 0.65rem;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #fff;
+        width: 65px;
+        text-align: center;
+        height: 23px;
+      }
+
+      .op-312 p.num_data110 {
+        background: #fe8600;
+        color: #fff;
+        padding: 2px 0px;
+        font-size: 0.65rem;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #fff;
+        width: 110px;
+        text-align: center;
+        height: 23px;
+      }
+
+      .op-312 .num_data55 {
+        background: #fe8600;
+        color: #fff;
+        padding: 2px 0px;
+        font-size: 0.65rem;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #fff;
+        width: 55px;
+        text-align: center;
+        height: 23px;
+      }
+
+      .op-312 .num-bor {
+        border-left: 0.5px solid white;
+      }
+
+      .op-312 .innr_ctl_st {
+        position: absolute;
+        background: #11263cf5;
+        left: 10px;
+        width: 170px;
+        text-align: left;
+        z-index: 1111;
+        top: -4.3rem;
+        border-radius: 5px;
+        padding: 10px 3px;
+      }
+      .op-312 .triangle-right_st {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #1a2f44;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+      }
+      .op-312 .shape-5 img {
+        width: 36.4rem;
+        margin-right: 1rem;
+        left: 0.7rem;
+        margin-top: -52px;
+        position: absolute;
+      }
+
+      .op-312 .main_col {
+        display: flex;
+        gap: 110px;
+      }
+      .op-312 .org_box {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+
+      .op-312 .right_show {
+        cursor: pointer;
+      }
+
+      .op-312 .right_show:hover + .info_ct {
+        display: block;
+      }
+
+      .op-312 .left_show {
+        cursor: pointer;
+      }
+
+      .op-312 .left_show:hover + .info_ctl {
+        display: block;
+      }
+
+      .op-312 .info_ct {
+        position: relative;
+        background: #000;
+        display: none;
+      }
+
+      .op-312 .innr_ct {
+        position: absolute;
+        background: #11263cf5;
+        left: 11px;
+        width: 170px;
+        text-align: left;
+        z-index: 1111;
+        top: -4.3rem;
+        border-radius: 5px;
+        padding: 10px 3px;
+      }
+
+      .op-312 .info_ctl {
+        position: relative;
+        background: #000;
+        display: none;
+      }
+
+      .op-312 .innr_ctl {
+        position: absolute;
+        background: #11263cf5;
+        right: 75px;
+        width: 170px;
+        text-align: left;
+        z-index: 1111;
+        top: -4.3rem;
+        border-radius: 5px;
+        padding: 10px 3px;
+      }
+
+      .op-312 .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 3px;
+      }
+
+      .op-312 .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #1a2f44;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        right: -11px;
+        top: -10px;
+      }
+      .op-312 .innr_ct_ed {
+        position: absolute;
+        background: #11263cf5;
+        right: 75px;
+        width: 170px;
+        text-align: left;
+        z-index: 1111;
+        top: -4.3rem;
+        border-radius: 5px;
+        padding: 10px 3px;
+      }
+      .op-312 .triangle-left_ed {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #1a2f44;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        left: -75px;
+        top: -10px;
+      }
+
+      .op-312 .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #1a2f44;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        right: 65px;
+        top: -10px;
+      }
+      .op-312 .innr_ctl_st {
+        position: absolute;
+        background: #11263cf5;
+        left: 10px;
+        width: 170px;
+        text-align: left;
+        z-index: 1111;
+        top: -4.3rem;
+        border-radius: 5px;
+        padding: 10px 3px;
+      }
+      .op-312 .triangle-right_st {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #1a2f44;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+      }
+
+      .op-312 .content p {
+        margin-bottom: 0;
+        text-align: left;
+        background: #11263c00;
+        font-size: 11px;
+        border-radius: 5px;
+        color: #fff;
+      }
+
+      /* /* .op-312 .move_right{
+  position: relative;
+    left: 65px;
+} */
+      .op-312 .move_left {
+        position: relative;
+      }
+      p.num_data.left_show.move_left_1 {
+        position: relative;
+        left: 30px;
+      }
+
+      .op-312 .triangle-right.gap_st {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #1a2f44;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        right: 0px;
+        top: -10px;
+      }
+      .op-312 .innr_ctl.gap_st {
+        position: absolute;
+        background: #11263cf5;
+        right: 10px;
+        width: 170px;
+        text-align: left;
+        z-index: 1111;
+        top: -4.3rem;
+        border-radius: 5px;
+        padding: 10px 3px;
+      }
+      .op-312 .innr_ctl.gap_lft {
+        position: absolute;
+        background: #11263cf5;
+        right: 80px;
+        width: 170px;
+        text-align: left;
+        z-index: 1111;
+        top: -4.3rem;
+        border-radius: 5px;
+        padding: 10px 3px;
+      }
+      .op-312 .triangle-right.gap_lft {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #1a2f44;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        right: 70px;
+        top: -10px;
+      }
+
+      .op-312 .ml-50 {
+        margin-left: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-body">
+      <hr class="main" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="innr_ctl gap_lft">
+            <a
+              href="#"
+              id="addnew"
+              class="btn btn-primary me-3 btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target=".bd-example-modal-lg"
+              >&nbsp; Open Layout</a
+            >
+            <div
+              class="modal fade bd-example-modal-lg"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg op-166-pop">
+                <div class="modal-content">
+                  <div class="modal-header mt-59">
+                    <h3 class="modal-title">SEL1-7-001</h3>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      style="margin-top: -1rem"
+                    ></button>
+                  </div>
+
+                  <div class="modal-body" style="padding-bottom: 3.5rem">
+                    <div class="card">
+                      <div class="card-body" style="padding: 0px">
+                        <div class="op-312">
+                          <div class="shape-5">
+                            <img src="op-312.svg" class="shape-5-img" />
+                          </div>
+                          <div class="shape-5 big">
+                            <!-- <div class="innr_ctl gap_lft"> <img src="images/op-166-1.svg" style=" margin-bottom: 1.5rem;"> </div> -->
+                          </div>
+
+                          <div class="main_col">
+                            <div class="col_flex">
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p
+                                  class="num_data110 left_show move_left invisible"
+                                >
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p
+                                  class="num_data110 left_show move_left invisible"
+                                >
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p
+                                  class="num_data110 left_show move_left invisible"
+                                >
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p
+                                  class="num_data110 left_show move_left invisible"
+                                >
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p
+                                  class="num_data110 left_show move_left invisible"
+                                >
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p
+                                  class="num_data110 left_show move_left invisible"
+                                >
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p
+                                  class="num_data110 left_show move_left invisible"
+                                >
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0101
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col_flex">
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box invisible">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box invisible">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box invisible">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box invisible">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box invisible">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box invisible">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box invisible">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                              <div class="org_box">
+                                <p class="num_data110 left_show move_left">
+                                  TYO1-4-2-S-001-0201
+                                </p>
+                                <div class="info_ctl">
+                                  <div class="innr_ctl gap_lft">
+                                    <div class="content">
+                                      <p>Status:</p>
+                                      <p>In Service</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Customer:</p>
+                                      <p>Xiaomi</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>Max kW:</p>
+                                      <p>20</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Breakers</p>
+                                    </div>
+                                    <div class="content">
+                                      <p>#Xconnects</p>
+                                    </div>
+                                  </div>
+                                  <div class="triangle-right gap_lft"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
