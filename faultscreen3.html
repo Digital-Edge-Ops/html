@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .display-title{
+          font-size: 3.125rem;
+          font-weight: bold;
+      }
+      .sel{
+          font-size: 1rem;
+          font-weight: bold;
+          color: #FE8600;
+      }
+      .sel-s1{
+          font-size: 1.875rem;
+          font-weight: bold;
+          color: #E03138;
+      }
+      .paging_tab {
+        display: flex;  
+      }
+      
+      .input-style{
+        width: 823px;
+        height: 75px;  
+       }
+      .paging_tab .nav-tabs {
+          border-bottom: none;
+          /* clip-path: polygon(75% 0%, 90% 50%, 75% 100%, 5% 100%, 15% 50%, 5% 0%); */
+      }
+      .t-menu-active{
+          background-color: #10253B !important; 
+          color: #FFFFFF !important;
+          border-bottom: 2px solid #f5793b;
+      }
+      /* .btn-light{
+        background-color: #E9E9E9;
+      } */
+      .item1 {
+          margin-left: -39px;
+          clip-path: polygon(75% 0%, 84% 50%, 75% 100%, 15% 100%, 15% 50%, 15% 0%);
+      }
+
+      .item2 {
+          margin-left: -71px;
+          clip-path: polygon(75% 0%, 88% 50%, 75% 100%, 3% 100%, 15% 50%, 3% 0%);
+      }
+
+      .item3 {
+          margin-left: -64px; 
+          clip-path: polygon(75% 0%, 82% 50%, 75% 100%, 7% 100%, 15% 50%, 7% 0%);
+      }
+
+      .item4 {
+          margin-left: -78px;
+          clip-path: polygon(75% 0%, 86% 50%, 75% 100%, 4% 100%, 15% 50%, 4% 0%);
+      }
+
+      .item5 {
+          margin-left: -45px;
+          clip-path: polygon(75% 0%, 90% 50%, 75% 100%, 1% 100%, 15% 50%, 1% 0%);
+      }
+
+      .item6 {
+          margin-left: -40px;
+          clip-path: polygon(75% 0%, 88% 50%, 75% 100%, 3% 100%, 15% 50%, 3% 0%);
+      }
+
+      .item7 {
+          margin-left: -56px;
+          clip-path: polygon(90% 0%, 90% 50%, 90% 100%, 4% 100%, 11% 50%, 4% 0%);
+      }
+      .inputstyle{
+          position: relative;
+      }
+      .btnsmall {
+          position: absolute;
+          right: 11px;
+          bottom: 15px;
+      }
+      .send_button {
+          border-color: #303841;
+          border-width: 1px;
+          width: 5rem;
+          background-color: #303841;
+          color: #FFFFFF;
+          cursor: pointer;
+          justify-content: center;
+          padding-bottom: calc(0.5em - 1px);
+          padding-left: 1em;
+          padding-right: 1em;
+          padding-top: calc(0.5em - 1px);
+          text-align: center;
+          white-space: nowrap;
+          border-radius: 8px;
+          font-size: 16px;
+      }
+      .history-title {
+          font-size: 1rem;
+          font-weight: bold;
+      }
+      .des-name{
+          font-size: 0.875rem;
+          font-weight: 500;
+      }
+      .img-title{
+          height: 2.4rem;
+          width: 2.4rem;
+          background: #147AD6;
+          display: block;
+          border-radius: 3.563rem;
+          line-height: 2.4rem;
+          margin-left: 9px;
+          font-size: 0.813rem;
+          text-align: center;
+          color: #ffffff;
+          margin-right: 1.25rem;
+          margin-top: 1px;
+          margin-bottom: 0px;
+      }
+      .history{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          border: 1px solid #E9E9E9;
+          border-radius: 5px;
+          padding: 5px 0px;
+      }
+      .card-text{
+          font-size: 0.625rem;
+      }
+      .msg-button {
+        background-color: #E9E9E9;
+        color: #6B6B6B;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 140px;
+        border-radius: 0;
+      }
+      .bactive {
+          background-color: #10253B; 
+          color: #FFFFFF;
+          border-bottom: 2px solid #f5793b;
+      }
+      .card-text-p{
+          font-size: 1rem;
+          color: #A9A9A9;
+      }
+      .ticket-details label b{
+          font-size: 1rem;
+      }
+
+      .tab-button-style { 
+          /* padding: 1rem 3rem; */
+          border-radius: 0;
+          font-weight: 400;
+          font-size: 1.125rem; 
+          background-color: #E9E9E9;
+          width: 180px;
+          height: 49px;
+          color: #787878;
+          text-align: left;
+          padding-left: 56px;
+      }
+      .paging_tab .nav {
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 0 !important;
+          margin-bottom: 0;
+          list-style: none;
+      }
+      .card {
+        border: none;
+      }
+      .modal-header{
+        border-bottom:none;
+      }
+      .tringale{
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #FE8600;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        left: 62px;
+        bottom: 60px;
+        transform: rotate(90deg);
+      }
+      .now-btn{
+        font-size: 8px;
+        color: #808080;
+        padding-left: 12px;
+      }
+      @media screen and  (max-width :1400px) {
+        .paging_tab { 
+        overflow-x: auto;
+      }
+      }
+      @media screen and (max-width:780px){
+       .input-style{
+            width: 467px !important; 
+       }
+      }
+      @media screen and (min-width:785px) and (max-width:1024px){
+       .input-style{
+            width: 568px !important; 
+       }
+      }
+      @media screen and (min-width:765px) and (max-width:768px){
+       .input-style{
+            width: 346px !important; 
+       }
+      }
+  </style>
+  </head>
+  <body>
+    <div id="fault-wrapper">
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="nav-header">
+                                <a href="index.html" class="brand-logo" id="headlogo">
+                                    <img src="images\logo.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link setting " href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <img src="images\settings-10@1x.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                                    <h4 class="pro"> DU </h4>
+                                    <div>
+                                        <span class="font-w400 d-block">Franklin Jr</span>
+                                        <small class="text-end font-w400" id="admin"> Admin </small>
+                                    </div>
+                                </a>
+                                <i class="fa fa-caret-down" aria-hidden="true" id="don"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18"
+                                            height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        <span class="ms-2">Profile </span>
+                                    </a>
+                                    <a href="email-inbox.html" class="dropdown-item ai-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="18"
+                                            height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span class="ms-2">Inbox </span>
+                                    </a>
+                                    <a href="page-error-404.html" class="dropdown-item ai-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18"
+                                            height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                            <polyline points="16 17 21 12 16 7"></polyline>
+                                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                                        </svg>
+                                        <span class="ms-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-body">
+            <hr class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <a href="#" id="addnew" class="btn btn-primary me-3 btn-sm" data-bs-toggle="modal"
+                            data-bs-target=".bd-example-modal-lg">&nbsp; Fault Ticket</a>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-xl lay-2-3pop">
+                                <div class="modal-content">
+                                    <div class="modal-header mt-59">
+                                        <h1 class="display-title">Fault Ticket</h1>
+                                        <div>
+                                            <h6 class="sel">SEL1</h6>
+                                            <h5 class="sel-s1">S-1</h5>
+                                        </div>
+                                    </div>
+                                    <div class="paging_tab">
+                                      <div class="item1">
+                                        <button class="btn btn-light tab-button-style t-menu-active" style="width: 260px;padding-left: 89px"> Unassigned</button>
+                                      </div>
+                                      <div class="item2">
+                                        <button class="btn btn-light tab-button-style " style="padding-left: 37px;"> In Progress</button>
+                                      </div>
+                                      <div class="item3">
+                                        <button class="btn btn-light tab-button-style" style="width: 290px;padding-left: 56px;"> Pending Customer</button>
+                                      </div>
+                                      <div class="item4">
+                                        <button class="btn btn-light tab-button-style"> Escalate</button>
+                                      </div>
+                                      <div class="item5">
+                                        <button class="btn btn-light tab-button-style" style="width: 144px;padding-left: 42px"> Fixed</button>
+                                      </div>
+                                      <div class="item6">
+                                        <button class="btn btn-light tab-button-style"> Solved</button>
+                                      </div>
+                                      <div class="item7">
+                                        <button class="btn btn-light tab-button-style" style="width: 328px;"> Cancelled</button>
+                                      </div>
+                                  </div> 
+                                    <div class="modal-body" style="padding-bottom: 3.5rem;">
+                                        <div class="card">
+                                            <div class="card-body" style="padding: 0px;">
+                                                <div class="main_layout-2-3"> 
+                                                    
+                                                    <div className="card-body">
+                                                        <div class="card-details">
+                                                            <div class="row">
+                                                                <div class="col-md-9">
+                                                                    <div class="ticket-details">
+                                                                        <div class="row">
+                                                                            <div class="col-md-8">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <label for="">Ticket
+                                                                                            #:</label><b>817</b>
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        <label for="">Designation
+                                                                                            Company:</label><b>21Vianet</b>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <label for="">Type:</label><b>Power
+                                                                                            Issue</b>
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        <label for="">Services
+                                                                                            ID:</label><b>PFCKR-1B-00034074</b>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4" style="padding-right: 0px;">
+                                                                                <label for="">Assigned To:</label> <button
+                                                                                    class="btn btn-primary me-3 btn-sm"
+                                                                                    style="width: 161px;
+                                                                                height: 35px; font-size: 0.875rem;">Assigned To Me</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                    <div class="row" style="padding-top: 16px;">
+                                                                        <h5 class="card-title" style="font-size: 1rem;">Description</h5>
+                                                                        <p class="card-text-p">Lorem Ipsum is simply dummy
+                                                                            text of the printing and typesetting
+                                                                            industry. Lorem Ipsum has been the
+                                                                            industry's standard dummy text ever since
+                                                                            the 1500s, when an unknown printer took a
+                                                                            galley of type and scrambled it to make a
+                                                                            type specimen book.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3"></div>
+                                                            </div>
+                                                            <div class="row pt-4">
+                                                                <div class="col-md-9">
+                                                                  <div style="position: relative;">
+                                                                    <div class="btnstyle">
+                                                                        <div class="btn-group">
+                                                                            <a href="#" class="btn msg-button bactive"
+                                                                                >Log
+                                                                                Note</a>
+                                                                                
+                                                                            <a href="#" class="btn msg-button">Send Message</a>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="inputstyle">
+                                                                        <div class="msg_input">
+                                                                            <div class="media-left">
+                                                                                <div class="field">
+                                                                                    <p class="control">
+                                                                                        <input class="input input-style"
+                                                                                            type="text"
+                                                                                            placeholder="New message...">
+                                                                                        <span
+                                                                                            class="icon btnsmall">
+                                                                                            <button
+                                                                                                class="button send_button">
+                                                                                                <span id="send_btn"
+                                                                                                    style="font-size: 14px;">SEND</span>
+                                                                                            </button>
+                                                                                        </span>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tringale"></div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-md-3"></div>
+                                                            </div>
+                                                            <div class="row pt-4">
+                                                                <h5 class="history-title">History</h5> 
+                                                                <div class="col-md-9" style="padding-bottom: 3px;">
+                                                                    <div class="history">
+                                                                        <div class="img-left">
+                                                                            <div class="img-title">NA</div>
+                                                                        </div>
+                                                                        <div class="description">
+                                                                            <h5 class="des-name">Jayan Nagar<span class="now-btn">Now <small style="color: #E03138;">*</small></span></h5>
+                                                                            <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                                <div class="col-md-3"></div>
+                                                                <div class="col-md-9" style="padding-bottom: 3px;"> 
+                                                                    <div class="history">
+                                                                        <div class="img-left">
+                                                                            <div class="img-title">NA</div>
+                                                                        </div>
+                                                                        <div class="description">
+                                                                            <h5 class="des-name">Jayan Nagar<span class="now-btn">Now</span></h5>
+                                                                            <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                                <div class="col-md-3"></div>
+                                                                <div class="col-md-9" style="padding-bottom: 3px;"> 
+                                                                    <div class="history">
+                                                                        <div class="img-left">
+                                                                            <div class="img-title">NA</div>
+                                                                        </div>
+                                                                        <div class="description">
+                                                                            <h5 class="des-name">Jayan Nagar <span class="now-btn">Now</span></h5>
+                                                                            <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                                <div class="col-md-3"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
