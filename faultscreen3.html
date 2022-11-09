@@ -22,6 +22,7 @@
       .display-title{
           font-size: 3.125rem;
           font-weight: bold;
+          font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
       .sel{
           font-size: 1rem;
@@ -40,6 +41,8 @@
       .input-style{
         width: 823px;
         height: 75px;  
+        border-radius: 7px;
+        border: 1px solid #707070;
        }
       .paging_tab .nav-tabs {
           border-bottom: none;
@@ -98,7 +101,7 @@
       .send_button {
           border-color: #303841;
           border-width: 1px;
-          width: 5rem;
+          width: 4rem;
           background-color: #303841;
           color: #FFFFFF;
           cursor: pointer;
@@ -172,7 +175,7 @@
           border-radius: 0;
           font-weight: 400;
           font-size: 1.125rem; 
-          background-color: #E9E9E9;
+          background-color: #F5F6FA;
           width: 180px;
           height: 49px;
           color: #787878;
@@ -208,7 +211,22 @@
         color: #808080;
         padding-left: 12px;
       }
-      @media screen and  (max-width :1200px) {
+      .history-div{
+        height: 33vh;
+        overflow-y: auto;
+      }
+      .assign-btn{
+        width: 161px;
+        height: 35px; 
+        font-size: 0.875rem;
+        background-color: #147AD6;
+        color: #FFFFFF;
+      }
+      .assign-btn:hover{
+        background-color: #147AD6;
+        color: #FFFFFF;
+      }
+      @media screen and  (max-width :1150px) {
         .paging_tab { 
         overflow-x: auto;
       }
@@ -309,7 +327,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header mt-59">
                                         <h1 class="display-title">Fault Ticket</h1>
-                                        <div>
+                                        <div style="margin-right: 20px;">
                                             <h6 class="sel">SEL1</h6>
                                             <h5 class="sel-s1">S-1</h5>
                                         </div>
@@ -359,7 +377,7 @@
                                                                                             Company:</label><b>21Vianet</b>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="row">
+                                                                                <div class="row pt-1">
                                                                                     <div class="col-md-4">
                                                                                         <label for="">Type:</label><b>Power
                                                                                             Issue</b>
@@ -370,11 +388,10 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-4" style="padding-right: 0px;">
+                                                                            <div class="col-md-4" style="padding-right: 0px;padding-top: 0.5rem;">
                                                                                 <label for="">Assigned To:</label> <button
-                                                                                    class="btn btn-primary me-3 btn-sm"
-                                                                                    style="width: 161px;
-                                                                                height: 35px; font-size: 0.875rem;">Assigned To Me</button>
+                                                                                    class="btn me-3 btn-sm assign-btn"
+                                                                                    >Assigned To Me</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -433,44 +450,44 @@
                                                             </div>
                                                             <div class="row pt-4">
                                                                 <h5 class="history-title">History</h5> 
-                                                                <div>
-                                                                <div class="col-md-9" style="padding-bottom: 3px;">
-                                                                    <div class="history">
-                                                                        <div class="img-left">
-                                                                            <div class="img-title">NA</div>
-                                                                        </div>
-                                                                        <div class="description">
-                                                                            <h5 class="des-name">Jayan Nagar<span class="now-btn">Now <small style="color: #E03138;">*</small></span></h5>
-                                                                            <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
-                                                                        </div>
+                                                                <div class="col-md-9"> 
+                                                                    <div class="history-div">
+                                                                    <div class="col-md-12" style="padding-bottom: 3px;">
+                                                                        <div class="history">
+                                                                            <div class="img-left">
+                                                                                <div class="img-title">NA</div>
+                                                                            </div>
+                                                                            <div class="description">
+                                                                                <h5 class="des-name">Jayan Nagar<span class="now-btn">Now <small style="color: #E03138;">*</small></span></h5>
+                                                                                <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
+                                                                            </div>
+                                                                        </div> 
+                                                                    </div>
+                                                                    <div class="col-md-12" style="padding-bottom: 3px;"> 
+                                                                        <div class="history">
+                                                                            <div class="img-left">
+                                                                                <div class="img-title">NA</div>
+                                                                            </div>
+                                                                            <div class="description">
+                                                                                <h5 class="des-name">Jayan Nagar<span class="now-btn">Now</span></h5>
+                                                                                <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
+                                                                            </div>
+                                                                        </div> 
                                                                     </div> 
+                                                                    <div class="col-md-12" style="padding-bottom: 3px;"> 
+                                                                        <div class="history">
+                                                                            <div class="img-left">
+                                                                                <div class="img-title">NA</div>
+                                                                            </div>
+                                                                            <div class="description">
+                                                                                <h5 class="des-name">Jayan Nagar <span class="now-btn">Now</span></h5>
+                                                                                <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
+                                                                            </div>
+                                                                        </div> 
+                                                                    </div> 
+                                                                    </div>
                                                                 </div>
                                                                 <div class="col-md-3"></div>
-                                                                <div class="col-md-9" style="padding-bottom: 3px;"> 
-                                                                    <div class="history">
-                                                                        <div class="img-left">
-                                                                            <div class="img-title">NA</div>
-                                                                        </div>
-                                                                        <div class="description">
-                                                                            <h5 class="des-name">Jayan Nagar<span class="now-btn">Now</span></h5>
-                                                                            <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
-                                                                        </div>
-                                                                    </div> 
-                                                                </div>
-                                                                <div class="col-md-3"></div>
-                                                                <div class="col-md-9" style="padding-bottom: 3px;"> 
-                                                                    <div class="history">
-                                                                        <div class="img-left">
-                                                                            <div class="img-title">NA</div>
-                                                                        </div>
-                                                                        <div class="description">
-                                                                            <h5 class="des-name">Jayan Nagar <span class="now-btn">Now</span></h5>
-                                                                            <p class="card-text" style="margin-top: -10px;">Hello Jayan Nagar, Hi..</p>
-                                                                        </div>
-                                                                    </div> 
-                                                                </div>
-                                                                <div class="col-md-3"></div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
