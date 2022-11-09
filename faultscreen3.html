@@ -99,10 +99,10 @@
           bottom: 17px;
       }
       .send_button {
-          border-color: #303841;
+          border-color: #10253B;
           border-width: 1px;
           width: 4rem;
-          background-color: #303841;
+          background-color: #10253B;
           color: #FFFFFF;
           cursor: pointer;
           justify-content: center;
@@ -226,6 +226,10 @@
         background-color: #147AD6;
         color: #FFFFFF;
       }
+      .send-btn{
+        font-size: 14px;
+         margin-left: -2px;
+      }
       @media screen and  (max-width :1150px) {
         .paging_tab { 
         overflow-x: auto;
@@ -246,6 +250,32 @@
             width: 346px !important; 
        }
       }
+        .tab-btn1{
+            width: 330px;
+            padding-left: 89px
+        }
+        .tab-btn2{
+            padding-left: 37px;
+        }
+        .tab-btn3{
+            width: 290px;
+            padding-left: 56px;
+        }
+        .tab-btn4{
+            width: 167px;
+            padding-left: 40px;
+        }
+        .tab-btn5{
+            width: 130px;
+            padding-left: 42px
+        }
+        .tab-btn6{
+            width: 130px;
+            padding-left: 32px;
+        }
+        .tab-btn7{
+            width: 336px;
+        }
   </style>
   </head>
   <body>
@@ -334,25 +364,25 @@
                                     </div>
                                     <div class="paging_tab">
                                       <div class="item1">
-                                        <button class="btn btn-light tab-button-style t-menu-active" style="width: 330px;padding-left: 89px"> Unassigned</button>
+                                        <button class="btn btn-light tab-button-style tab-btn1 t-menu-active"> Unassigned</button>
                                       </div>
                                       <div class="item2">
-                                        <button class="btn btn-light tab-button-style " style="padding-left: 37px;"> In Progress</button>
+                                        <button class="btn btn-light tab-button-style tab-btn2"> In Progress</button>
                                       </div>
                                       <div class="item3">
-                                        <button class="btn btn-light tab-button-style" style="width: 290px;padding-left: 56px;"> Pending Customer</button>
+                                        <button class="btn btn-light tab-button-style tab-btn3"> Pending Customer</button>
                                       </div>
                                       <div class="item4">
-                                        <button class="btn btn-light tab-button-style" style="width: 167px;padding-left: 40px;"> Escalate</button>
+                                        <button class="btn btn-light tab-button-style tab-btn4">Escalate</button>
                                       </div>
                                       <div class="item5">
-                                        <button class="btn btn-light tab-button-style" style="width: 130px;padding-left: 42px"> Fixed</button>
+                                        <button class="btn btn-light tab-button-style tab-btn5"> Fixed</button>
                                       </div>
                                       <div class="item6">
-                                        <button class="btn btn-light tab-button-style" style="width: 130px;padding-left: 32px;"> Solved</button>
+                                        <button class="btn btn-light tab-button-style tab-btn6"> Solved</button>
                                       </div>
                                       <div class="item7">
-                                        <button class="btn btn-light tab-button-style" style="width: 336px;"> Cancelled</button>
+                                        <button class="btn btn-light tab-button-style tab-btn7"> Cancelled</button>
                                       </div>
                                   </div> 
                                     <div class="modal-body" style="padding-bottom: 3.5rem;">
@@ -409,7 +439,7 @@
                                                                 </div>
                                                                 <div class="col-md-3"></div>
                                                             </div>
-                                                            <div class="row pt-4">
+                                                            <div class="row pt-2">
                                                                 <div class="col-md-9">
                                                                   <div style="position: relative;">
                                                                     <div class="btnstyle">
@@ -434,8 +464,8 @@
                                                                                             class="icon btnsmall">
                                                                                             <button
                                                                                                 class="button send_button">
-                                                                                                <span id="send_btn"
-                                                                                                    style="font-size: 14px;">SEND</span>
+                                                                                                <span class="send-btn"
+                                                                                                >SEND</span>
                                                                                             </button>
                                                                                         </span>
                                                                                     </p>
@@ -448,7 +478,7 @@
                                                                 </div>
                                                                 <div class="col-md-3"></div>
                                                             </div>
-                                                            <div class="row pt-4">
+                                                            <div class="row pt-2">
                                                                 <h5 class="history-title">History</h5> 
                                                                 <div class="col-md-9"> 
                                                                     <div class="history-div">
